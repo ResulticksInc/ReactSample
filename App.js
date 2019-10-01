@@ -62,7 +62,6 @@ export default class App extends Component {
 	};
 
 	getNotification = () => {
-		console.log('Welcome Buvanesgh');
 		NativeModules.ReReactNativeSDK.getNotification((error, notifications) => {
 			console.log(notifications[0]);
 			var json = JSON.parse(notifications);
