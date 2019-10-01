@@ -1,0 +1,93 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.awesomeproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".MainApplication"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:allowBackup="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.awesomeproject.MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="open"
+                    android:scheme="react" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="my_default_channel" />
+
+        <meta-data
+            android:name="resulticks.default_notification_icon"
+            android:resource="@drawable/ic_launcher" />
+
+        <meta-data
+            android:name="resulticks.default_notification_icon_transparent"
+            android:resource="@drawable/ic_launcher" />
+
+        <meta-data
+            android:name="resulticks.default_notification_color"
+            android:resource="@color/background" />
+        <meta-data
+            android:name="resulticks.key"
+            android:value="api_key_6087064d-c0fe-45ec-b5cd-380177251baf" />
+
+        <service
+            android:name="com.evollu.react.fcm.MessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.evollu.react.fcm.InstanceIdService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.evollu.react.fcm.FIRLocalMessagingPublisher"/>
+
+             <receiver android:enabled="true" android:exported="true"  android:name="com.evollu.react.fcm.FIRSystemBootEventReceiver">
+                  <intent-filter>
+                      <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                      <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                      <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+                      <category android:name="android.intent.category.DEFAULT" />
+                  </intent-filter>
+              </receiver>
+
+    </application>
+
+</manifest>
