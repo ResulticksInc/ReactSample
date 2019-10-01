@@ -37,14 +37,12 @@
   
          getNotification = () => {
 		NativeModules.ReReactNativeSDK.getNotification((error, notifications) => {
-			console.log(notifications[0]);
 			var json = JSON.parse(notifications);
 			this.setState({ notifications: json });
-			alert(json[0]);
 		});
 	};
 
 	deleteNotification = (position) => {
-		NativeModules.ReReactNativeSDK.deleteNotification(JSON.stringify(this.state.notifications[0]));
+		NativeModules.ReReactNativeSDK.deleteNotification(JSON.stringify(this.state.notifications[position]));
 	};
 
