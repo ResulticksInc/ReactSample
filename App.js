@@ -91,10 +91,10 @@ export default class App extends Component {
 					<Button onPress={this.userlocationUpdate} title="Locaction Update " color="#FF6347" />
 				</View>
 				<View style={{ marginTop: 10 }}>
-					<Button onPress={this.getNotification} title="GetNotification " color="#FF6347" />
+					<Button onPress={this.getNotification} title="Get Notification " color="#FF6347" />
 				</View>
 				<View style={{ marginTop: 10 }}>
-					<Button onPress={this.deleteNotification} title="DeleteNotification" color="#FF6347" />
+					<Button onPress={this.deleteNotification} title="Delete Notification" color="#FF6347" />
 				</View>
 			</View>
 		);
