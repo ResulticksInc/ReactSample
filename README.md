@@ -35,7 +35,7 @@
 	};
   
   
-  getNotification = () => {
+         getNotification = () => {
 		NativeModules.ReReactNativeSDK.getNotification((error, notifications) => {
 			console.log(notifications[0]);
 			var json = JSON.parse(notifications);
