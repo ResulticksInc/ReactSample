@@ -38,11 +38,4 @@ allprojects {
         google()
         jcenter()
     }
-
-    configurations.all {
-        resolutionStrategy {
-            cacheChangingModulesFor 0, 'seconds'
-        }
-    }
-
 }

@@ -21,23 +21,6 @@
                     }
                 },
                 {
-                    "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7d4f07582bf69f285005997467d9488a/res/values-lo/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "205",
-                        "endColumns": "99",
-                        "endOffsets": "304"
-                    },
-                    "to": {
-                        "startLines": "47",
-                        "startColumns": "4",
-                        "startOffsets": "5498",
-                        "endColumns": "103",
-                        "endOffsets": "5597"
-                    }
-                },
-                {
                     "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/cabcc1390bd586089e80cc89a82d053a/res/values-lo/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
@@ -55,7 +38,24 @@
                     }
                 },
                 {
-                    "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0d8b85e8d80d54a29a2c8133be891049/res/values-lo/values.xml",
+                    "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/30f810b7d90bef434966917674b0b788/res/values-lo/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "205",
+                        "endColumns": "99",
+                        "endOffsets": "304"
+                    },
+                    "to": {
+                        "startLines": "47",
+                        "startColumns": "4",
+                        "startOffsets": "5498",
+                        "endColumns": "103",
+                        "endOffsets": "5597"
+                    }
+                },
+                {
+                    "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2922521906db448f0c1979abe01717b3/res/values-lo/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

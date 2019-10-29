@@ -21,23 +21,6 @@
                     }
                 },
                 {
-                    "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7d4f07582bf69f285005997467d9488a/res/values-pa/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "205",
-                        "endColumns": "99",
-                        "endOffsets": "304"
-                    },
-                    "to": {
-                        "startLines": "47",
-                        "startColumns": "4",
-                        "startOffsets": "5515",
-                        "endColumns": "103",
-                        "endOffsets": "5614"
-                    }
-                },
-                {
                     "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/90a6a9591304a49a3953f866ea670c38/res/values-pa/values-pa.xml",
                     "from": {
                         "startLines": "2",
@@ -52,6 +35,23 @@
                         "startOffsets": "5699",
                         "endColumns": "100",
                         "endOffsets": "5795"
+                    }
+                },
+                {
+                    "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/30f810b7d90bef434966917674b0b788/res/values-pa/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "205",
+                        "endColumns": "99",
+                        "endOffsets": "304"
+                    },
+                    "to": {
+                        "startLines": "47",
+                        "startColumns": "4",
+                        "startOffsets": "5515",
+                        "endColumns": "103",
+                        "endOffsets": "5614"
                     }
                 },
                 {
@@ -72,7 +72,7 @@
                     }
                 },
                 {
-                    "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0d8b85e8d80d54a29a2c8133be891049/res/values-pa/values.xml",
+                    "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2922521906db448f0c1979abe01717b3/res/values-pa/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

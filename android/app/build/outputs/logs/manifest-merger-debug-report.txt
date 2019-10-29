@@ -6,10 +6,10 @@ INJECTED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app
 INJECTED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:1:1-93:12
 MERGED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:1:1-93:12
 MERGED from [:react-native-fcm] /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/node_modules/react-native-fcm/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:2:1-46:12
-MERGED from [com.facebook.react:react-native:0.60.5] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/908104476d4b623a07e5e010d3c141cb/AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.firebase:firebase-core:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/12d810383d1a1cdc88e1fc348061e76b/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7d4f07582bf69f285005997467d9488a/AndroidManifest.xml:17:1-37:12
+MERGED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:2:1-46:12
+MERGED from [com.facebook.react:react-native:0.60.5] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/5796d6c4f1b88f3b0b7701d32bde088b/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-core:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2133a9604816d85fc041856afc3cdb05/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/30f810b7d90bef434966917674b0b788/AndroidManifest.xml:17:1-37:12
 MERGED from [org.webkit:android-jsc:r245459] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2f97cae9d7b1a64627835acce232328f/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/58dd0282a9da93b957e207ffd0c75088/AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/f512ba9e28e440bb07eb846698de60d4/AndroidManifest.xml:2:1-9:12
@@ -22,29 +22,29 @@ MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/Buvaneswaran/.
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/f57536640ac99a84d3f36ad537f0a9ac/AndroidManifest.xml:2:1-13:12
 MERGED from [me.leolin:ShortcutBadger:1.1.17] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/65df2f47042a952d30f1ee7f19049bdf/AndroidManifest.xml:2:1-52:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/da0cb4df0efc6ecb601c13dc770dd322/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/26c61b42aa8218b561c31363f2883fbf/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/e48198e6f9110b629157bd52183d8e38/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.firebase:firebase-iid:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0c86ac8c4ddda8ec46c25de466fb8a5d/AndroidManifest.xml:17:1-47:12
 MERGED from [com.google.firebase:firebase-common:19.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/afe798866dff8231cf9b408f60b65d0c/AndroidManifest.xml:2:1-19:12
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/5e7efd4d379cf3ec8dd5251e92d6aa6f/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/cabcc1390bd586089e80cc89a82d053a/AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/495e1ed3b3821992f4c0e42689980047/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7993e48f4ffbeb34fcf589b1ee6b0717/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:17:1-55:12
-MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/3f259f57182b9fdf9b642f7f57a2bef6/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/96d2f53f786bb6f570ce0ebb46ec96fa/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/c74c2760969386e86358a8f19c494dc4/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b73892ff5fc4968d95a416868ff5a9f6/AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/8f357564f00ab29eb562d80159982714/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/80065027435ab35689c8f266fe88df9f/AndroidManifest.xml:17:1-27:12
-MERGED from [com.google.android.gms:play-services-measurement-base:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/1f732d13c36093c74920679d90dc6fb1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/d16642b1d8bec02ca08cb3aaeaf68bf8/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/8b9183804da9e7d3586416e72a9675a3/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/5a0df9f0098685a6fbdae4f4d912aa59/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0d8b85e8d80d54a29a2c8133be891049/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2922521906db448f0c1979abe01717b3/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/f6339fb9f662b4f85dca0d35c1c49a54/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/4f1e14f70ef3455569a1b4186c4d769f/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b91dd6c9bf6862540aef21a68c2ad638/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/bd8404d720a58aa8b9a18d83a6733cf5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.exoplayer:exoplayer-dash:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/837eaf26328d30c11ccdad78b049ffd5/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-ui:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/dce7a19cdc3a3457505fd2c5bddcec60/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/8089e8b98b5a9a92d3b50b423793a866/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/92555b052725a18f192c0e4db56c99af/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/71686787d4da511e5b546f3c3b539354/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/41905da6eff7d9d26d881f04963ea260/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/3111dede7d1687443a9a07914cfcf733/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/e0c7036c0212bfdfa5efe881bf981bf8/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0a5ee72d8ed68f94c70b95cee18ef432/AndroidManifest.xml:17:1-22:12
@@ -68,7 +68,7 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/Buvaneswaran/.grad
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/c2e5e4ba4a6293e9b28bbfab581b3cc8/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/59009f2957c9e048174efebd9beef619/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/4bf281bf38c842cd07cceb6118d7f794/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/be459b7c24c0cc39aa0fd631356a9da7/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/892ee5fea215907c8c25f0d2367d4c80/AndroidManifest.xml:2:1-9:12
 INJECTED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/debug/AndroidManifest.xml:2:1-8:12
@@ -91,18 +91,18 @@ INJECTED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app
 		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:4:5-67
-MERGED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:15:5-67
-MERGED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:15:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:22:5-67
+MERGED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:15:5-67
+MERGED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:15:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-iid:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0c86ac8c4ddda8ec46c25de466fb8a5d/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0c86ac8c4ddda8ec46c25de466fb8a5d/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/96d2f53f786bb6f570ce0ebb46ec96fa/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/96d2f53f786bb6f570ce0ebb46ec96fa/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/80065027435ab35689c8f266fe88df9f/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/80065027435ab35689c8f266fe88df9f/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b73892ff5fc4968d95a416868ff5a9f6/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b73892ff5fc4968d95a416868ff5a9f6/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/d16642b1d8bec02ca08cb3aaeaf68bf8/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/d16642b1d8bec02ca08cb3aaeaf68bf8/AndroidManifest.xml:23:5-67
 	android:name
 		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
@@ -117,20 +117,20 @@ application
 ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:8:5-91:19
 MERGED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:8:5-91:19
 MERGED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:8:5-91:19
-MERGED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:23:5-44:19
-MERGED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:23:5-44:19
-MERGED from [com.facebook.react:react-native:0.60.5] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/908104476d4b623a07e5e010d3c141cb/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.60.5] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/908104476d4b623a07e5e010d3c141cb/AndroidManifest.xml:11:5-20
-MERGED from [com.google.firebase:firebase-core:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/12d810383d1a1cdc88e1fc348061e76b/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-core:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/12d810383d1a1cdc88e1fc348061e76b/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7d4f07582bf69f285005997467d9488a/AndroidManifest.xml:22:5-35:19
-MERGED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7d4f07582bf69f285005997467d9488a/AndroidManifest.xml:22:5-35:19
+MERGED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:23:5-44:19
+MERGED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:23:5-44:19
+MERGED from [com.facebook.react:react-native:0.60.5] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/5796d6c4f1b88f3b0b7701d32bde088b/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.60.5] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/5796d6c4f1b88f3b0b7701d32bde088b/AndroidManifest.xml:11:5-20
+MERGED from [com.google.firebase:firebase-core:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2133a9604816d85fc041856afc3cdb05/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2133a9604816d85fc041856afc3cdb05/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/30f810b7d90bef434966917674b0b788/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/30f810b7d90bef434966917674b0b788/AndroidManifest.xml:22:5-35:19
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/f57536640ac99a84d3f36ad537f0a9ac/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/f57536640ac99a84d3f36ad537f0a9ac/AndroidManifest.xml:11:5-20
-MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/26c61b42aa8218b561c31363f2883fbf/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/26c61b42aa8218b561c31363f2883fbf/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:26:5-34:19
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/e48198e6f9110b629157bd52183d8e38/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/e48198e6f9110b629157bd52183d8e38/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.firebase:firebase-iid:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0c86ac8c4ddda8ec46c25de466fb8a5d/AndroidManifest.xml:28:5-45:19
 MERGED from [com.google.firebase:firebase-iid:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0c86ac8c4ddda8ec46c25de466fb8a5d/AndroidManifest.xml:28:5-45:19
 MERGED from [com.google.firebase:firebase-common:19.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/afe798866dff8231cf9b408f60b65d0c/AndroidManifest.xml:11:5-17:19
@@ -143,20 +143,20 @@ MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/Buvaneswa
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/495e1ed3b3821992f4c0e42689980047/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7993e48f4ffbeb34fcf589b1ee6b0717/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7993e48f4ffbeb34fcf589b1ee6b0717/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:28:5-53:19
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:28:5-53:19
-MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/3f259f57182b9fdf9b642f7f57a2bef6/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/3f259f57182b9fdf9b642f7f57a2bef6/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/96d2f53f786bb6f570ce0ebb46ec96fa/AndroidManifest.xml:28:5-38:19
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/96d2f53f786bb6f570ce0ebb46ec96fa/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/c74c2760969386e86358a8f19c494dc4/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/c74c2760969386e86358a8f19c494dc4/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b73892ff5fc4968d95a416868ff5a9f6/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b73892ff5fc4968d95a416868ff5a9f6/AndroidManifest.xml:28:5-38:19
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/8f357564f00ab29eb562d80159982714/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/8f357564f00ab29eb562d80159982714/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-measurement-base:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/1f732d13c36093c74920679d90dc6fb1/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-measurement-base:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/1f732d13c36093c74920679d90dc6fb1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/8b9183804da9e7d3586416e72a9675a3/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/8b9183804da9e7d3586416e72a9675a3/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/5a0df9f0098685a6fbdae4f4d912aa59/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/5a0df9f0098685a6fbdae4f4d912aa59/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0d8b85e8d80d54a29a2c8133be891049/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0d8b85e8d80d54a29a2c8133be891049/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2922521906db448f0c1979abe01717b3/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2922521906db448f0c1979abe01717b3/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.0.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/90a6a9591304a49a3953f866ea670c38/AndroidManifest.xml:22:5-89
 MERGED from [androidx.core:core:1.0.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/90a6a9591304a49a3953f866ea670c38/AndroidManifest.xml:22:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/98120dd47f58f4e02415204f8e7d5d66/AndroidManifest.xml:22:5-23:19
@@ -164,7 +164,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/Buva
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/90a6a9591304a49a3953f866ea670c38/AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:23:18-44
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:23:18-44
 	android:label
 		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:10:9-41
 		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:10:9-41
@@ -193,30 +193,32 @@ activity#com.awesomeproject.MainActivity
 ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:15:9-36:20
 	android:label
 		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:17:13-45
+	android:launchMode
+		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:18:13-43
 	android:windowSoftInputMode
-		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:19:13-55
+		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:20:13-55
 	android:configChanges
-		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:18:13-83
+		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:19:13-83
 	android:name
 		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:16:13-59
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:20:13-23:29
+ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:21:13-24:29
 action#android.intent.action.MAIN
-ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:21:17-69
+ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:21:25-66
+		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:22:17-77
+ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:22:27-74
+		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:23:27-74
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:open+data:scheme:react
-ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:25:13-34:29
+ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:26:13-34:29
 	android:autoVerify
-		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:25:28-53
+		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:26:28-53
 action#android.intent.action.VIEW
-ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:26:17-69
+ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:26:25-66
+		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:27:25-66
 category#android.intent.category.DEFAULT
 ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:28:17-76
 	android:name
@@ -329,14 +331,14 @@ INJECTED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app
 INJECTED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml
 MERGED from [:react-native-fcm] /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/node_modules/react-native-fcm/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-fcm] /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/node_modules/react-native-fcm/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:7:5-9:41
-MERGED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.60.5] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/908104476d4b623a07e5e010d3c141cb/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.60.5] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/908104476d4b623a07e5e010d3c141cb/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:firebase-core:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/12d810383d1a1cdc88e1fc348061e76b/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-core:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/12d810383d1a1cdc88e1fc348061e76b/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7d4f07582bf69f285005997467d9488a/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7d4f07582bf69f285005997467d9488a/AndroidManifest.xml:20:5-44
+MERGED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:7:5-9:41
+MERGED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.60.5] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/5796d6c4f1b88f3b0b7701d32bde088b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.60.5] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/5796d6c4f1b88f3b0b7701d32bde088b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-core:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2133a9604816d85fc041856afc3cdb05/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2133a9604816d85fc041856afc3cdb05/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/30f810b7d90bef434966917674b0b788/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/30f810b7d90bef434966917674b0b788/AndroidManifest.xml:20:5-44
 MERGED from [org.webkit:android-jsc:r245459] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2f97cae9d7b1a64627835acce232328f/AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r245459] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2f97cae9d7b1a64627835acce232328f/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/58dd0282a9da93b957e207ffd0c75088/AndroidManifest.xml:20:5-44
@@ -361,10 +363,10 @@ MERGED from [me.leolin:ShortcutBadger:1.1.17] /Users/Buvaneswaran/.gradle/caches
 MERGED from [me.leolin:ShortcutBadger:1.1.17] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/65df2f47042a952d30f1ee7f19049bdf/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/da0cb4df0efc6ecb601c13dc770dd322/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/da0cb4df0efc6ecb601c13dc770dd322/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/26c61b42aa8218b561c31363f2883fbf/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/26c61b42aa8218b561c31363f2883fbf/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/e48198e6f9110b629157bd52183d8e38/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/e48198e6f9110b629157bd52183d8e38/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0c86ac8c4ddda8ec46c25de466fb8a5d/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0c86ac8c4ddda8ec46c25de466fb8a5d/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-common:19.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/afe798866dff8231cf9b408f60b65d0c/AndroidManifest.xml:6:5-8:41
@@ -377,22 +379,22 @@ MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/Buvaneswa
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/495e1ed3b3821992f4c0e42689980047/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7993e48f4ffbeb34fcf589b1ee6b0717/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7993e48f4ffbeb34fcf589b1ee6b0717/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/3f259f57182b9fdf9b642f7f57a2bef6/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/3f259f57182b9fdf9b642f7f57a2bef6/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/96d2f53f786bb6f570ce0ebb46ec96fa/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/96d2f53f786bb6f570ce0ebb46ec96fa/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/c74c2760969386e86358a8f19c494dc4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/c74c2760969386e86358a8f19c494dc4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b73892ff5fc4968d95a416868ff5a9f6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b73892ff5fc4968d95a416868ff5a9f6/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/8f357564f00ab29eb562d80159982714/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/8f357564f00ab29eb562d80159982714/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/80065027435ab35689c8f266fe88df9f/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/80065027435ab35689c8f266fe88df9f/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-base:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/1f732d13c36093c74920679d90dc6fb1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-base:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/1f732d13c36093c74920679d90dc6fb1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/d16642b1d8bec02ca08cb3aaeaf68bf8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/d16642b1d8bec02ca08cb3aaeaf68bf8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/8b9183804da9e7d3586416e72a9675a3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/8b9183804da9e7d3586416e72a9675a3/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/5a0df9f0098685a6fbdae4f4d912aa59/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/5a0df9f0098685a6fbdae4f4d912aa59/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0d8b85e8d80d54a29a2c8133be891049/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0d8b85e8d80d54a29a2c8133be891049/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2922521906db448f0c1979abe01717b3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2922521906db448f0c1979abe01717b3/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/f6339fb9f662b4f85dca0d35c1c49a54/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/f6339fb9f662b4f85dca0d35c1c49a54/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/4f1e14f70ef3455569a1b4186c4d769f/AndroidManifest.xml:20:5-44
@@ -401,12 +403,12 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/Buvaneswaran/.
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b91dd6c9bf6862540aef21a68c2ad638/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/bd8404d720a58aa8b9a18d83a6733cf5/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/bd8404d720a58aa8b9a18d83a6733cf5/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.exoplayer:exoplayer-dash:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/837eaf26328d30c11ccdad78b049ffd5/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-dash:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/837eaf26328d30c11ccdad78b049ffd5/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-ui:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/dce7a19cdc3a3457505fd2c5bddcec60/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-ui:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/dce7a19cdc3a3457505fd2c5bddcec60/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/8089e8b98b5a9a92d3b50b423793a866/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/8089e8b98b5a9a92d3b50b423793a866/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/92555b052725a18f192c0e4db56c99af/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/92555b052725a18f192c0e4db56c99af/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/71686787d4da511e5b546f3c3b539354/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/71686787d4da511e5b546f3c3b539354/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/41905da6eff7d9d26d881f04963ea260/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.7.3] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/41905da6eff7d9d26d881f04963ea260/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/3111dede7d1687443a9a07914cfcf733/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/3111dede7d1687443a9a07914cfcf733/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/e0c7036c0212bfdfa5efe881bf981bf8/AndroidManifest.xml:20:5-44
@@ -453,8 +455,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/Buvaneswar
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/59009f2957c9e048174efebd9beef619/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/4bf281bf38c842cd07cceb6118d7f794/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/4bf281bf38c842cd07cceb6118d7f794/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/be459b7c24c0cc39aa0fd631356a9da7/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/be459b7c24c0cc39aa0fd631356a9da7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/892ee5fea215907c8c25f0d2367d4c80/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/892ee5fea215907c8c25f0d2367d4c80/AndroidManifest.xml:5:5-7:41
 INJECTED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -468,81 +470,81 @@ ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/sr
 	android:name
 		ADDED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/debug/AndroidManifest.xml:5:22-75
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:11:5-81
+ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:11:5-81
 	android:name
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:11:22-78
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:11:22-78
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:12:5-76
+ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:12:5-76
 	android:name
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:12:22-73
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:12:22-73
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:13:5-71
+ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:13:5-71
 	android:name
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:13:22-68
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:13:22-68
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:14:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:23:5-79
+ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:14:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-iid:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0c86ac8c4ddda8ec46c25de466fb8a5d/AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-iid:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0c86ac8c4ddda8ec46c25de466fb8a5d/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/96d2f53f786bb6f570ce0ebb46ec96fa/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/96d2f53f786bb6f570ce0ebb46ec96fa/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/80065027435ab35689c8f266fe88df9f/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/80065027435ab35689c8f266fe88df9f/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b73892ff5fc4968d95a416868ff5a9f6/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b73892ff5fc4968d95a416868ff5a9f6/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/d16642b1d8bec02ca08cb3aaeaf68bf8/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/d16642b1d8bec02ca08cb3aaeaf68bf8/AndroidManifest.xml:24:5-79
 	android:name
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:14:22-76
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:14:22-76
 uses-feature#android.hardware.sensor.accelerometer
-ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:17:5-19:35
+ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:17:5-19:35
 	android:required
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:19:9-32
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:19:9-32
 	android:name
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:18:9-61
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:18:9-61
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:21:5-75
+ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:21:5-75
 	android:name
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:21:22-72
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:21:22-72
 receiver#io.mob.resu.reandroidsdk.NotificationActionReceiver
-ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:24:9-28:20
+ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:24:9-28:20
 	android:name
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:24:19-85
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:24:19-85
 intent-filter#action:name:postmessage
-ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:25:13-27:29
+ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:25:13-27:29
 action#postmessage
-ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:26:17-54
+ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:26:17-54
 	android:name
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:26:25-51
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:26:25-51
 receiver#io.mob.resu.reandroidsdk.ReNotificationBroadcastReceiver
-ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:29:9-35:20
+ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:29:9-35:20
 	android:enabled
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:31:13-35
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:31:13-35
 	android:name
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:30:13-84
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:30:13-84
 intent-filter#action:name:resu.io.NOTIFICATION
-ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:32:13-34:29
+ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:32:13-34:29
 action#resu.io.NOTIFICATION
-ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:33:17-63
+ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:33:17-63
 	android:name
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:33:25-60
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:33:25-60
 receiver#io.mob.resu.reandroidsdk.ScheduleNotification
-ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:36:9-39:20
+ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:36:9-39:20
 	android:exported
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:38:13-36
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:38:13-36
 	android:name
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:37:13-73
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:37:13-73
 service#io.mob.resu.reandroidsdk.AppKillService
-ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:41:9-43:44
+ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:41:9-43:44
 	android:stopWithTask
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:43:13-41
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:43:13-41
 	android:name
-		ADDED from [io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/834a9fa70303fe3dbd94d345eebf2e79/AndroidManifest.xml:42:13-67
+		ADDED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:42:13-67
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7d4f07582bf69f285005997467d9488a/AndroidManifest.xml:28:9-34:19
+ADDED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/30f810b7d90bef434966917674b0b788/AndroidManifest.xml:28:9-34:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7d4f07582bf69f285005997467d9488a/AndroidManifest.xml:30:13-37
+		ADDED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/30f810b7d90bef434966917674b0b788/AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7d4f07582bf69f285005997467d9488a/AndroidManifest.xml:29:13-82
+		ADDED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/30f810b7d90bef434966917674b0b788/AndroidManifest.xml:29:13-82
 uses-permission#com.sec.android.provider.badge.permission.READ
 ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/65df2f47042a952d30f1ee7f19049bdf/AndroidManifest.xml:19:5-86
 	android:name
@@ -608,31 +610,31 @@ ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/Buvaneswaran/.gradle/caches/
 	android:name
 		ADDED from [me.leolin:ShortcutBadger:1.1.17] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/65df2f47042a952d30f1ee7f19049bdf/AndroidManifest.xml:50:22-86
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:24:5-68
+ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-iid:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0c86ac8c4ddda8ec46c25de466fb8a5d/AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-iid:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0c86ac8c4ddda8ec46c25de466fb8a5d/AndroidManifest.xml:24:5-68
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/96d2f53f786bb6f570ce0ebb46ec96fa/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/96d2f53f786bb6f570ce0ebb46ec96fa/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/80065027435ab35689c8f266fe88df9f/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/80065027435ab35689c8f266fe88df9f/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b73892ff5fc4968d95a416868ff5a9f6/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b73892ff5fc4968d95a416868ff5a9f6/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/d16642b1d8bec02ca08cb3aaeaf68bf8/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/d16642b1d8bec02ca08cb3aaeaf68bf8/AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:24:22-65
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:24:22-65
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:27:9-33:19
+ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.firebase:firebase-iid:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0c86ac8c4ddda8ec46c25de466fb8a5d/AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-iid:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0c86ac8c4ddda8ec46c25de466fb8a5d/AndroidManifest.xml:29:9-35:19
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:29:13-37
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:28:13-84
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:28:13-84
 meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
-ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:30:13-32:85
+ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:30:13-32:85
 	android:value
-		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:32:17-82
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:32:17-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/a67f042ab9f1c1c4211cf661172d2869/AndroidManifest.xml:31:17-139
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/416e3d6c4a97d22e2e8218423e9ac267/AndroidManifest.xml:31:17-139
 uses-permission#com.google.android.c2dm.permission.RECEIVE
 ADDED from [com.google.firebase:firebase-iid:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0c86ac8c4ddda8ec46c25de466fb8a5d/AndroidManifest.xml:26:5-82
 	android:name
@@ -676,58 +678,58 @@ ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/Buvaneswara
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/cabcc1390bd586089e80cc89a82d053a/AndroidManifest.xml:24:13-79
 uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
-ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:26:5-110
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/96d2f53f786bb6f570ce0ebb46ec96fa/AndroidManifest.xml:26:5-110
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/96d2f53f786bb6f570ce0ebb46ec96fa/AndroidManifest.xml:26:5-110
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b73892ff5fc4968d95a416868ff5a9f6/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b73892ff5fc4968d95a416868ff5a9f6/AndroidManifest.xml:26:5-110
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:26:22-107
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:26:22-107
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:29:9-33:20
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:29:9-33:20
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:31:13-35
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:31:13-35
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:32:13-37
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:30:13-85
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:30:13-85
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:34:9-42:20
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/96d2f53f786bb6f570ce0ebb46ec96fa/AndroidManifest.xml:29:9-37:20
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/96d2f53f786bb6f570ce0ebb46ec96fa/AndroidManifest.xml:29:9-37:20
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b73892ff5fc4968d95a416868ff5a9f6/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b73892ff5fc4968d95a416868ff5a9f6/AndroidManifest.xml:29:9-37:20
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:36:13-35
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:36:13-35
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:37:13-36
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:37:13-36
 	android:permission
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:38:13-69
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:38:13-69
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:35:13-100
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:35:13-100
 intent-filter#action:name:com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:39:13-41:29
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:39:13-41:29
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:40:17-79
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:40:17-79
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:40:25-76
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:40:25-76
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:44:9-47:40
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:44:9-47:40
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:46:13-35
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:46:13-35
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:47:13-37
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:45:13-84
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:45:13-84
 service#com.google.android.gms.measurement.AppMeasurementJobService
-ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:48:9-52:72
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:48:9-52:72
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:50:13-35
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:50:13-35
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:51:13-37
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:51:13-37
 	android:permission
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:52:13-69
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:52:13-69
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/474a00ccd043c276795d23c5d586306e/AndroidManifest.xml:49:13-87
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/aa208996b88bf6886440e8593f6c98ad/AndroidManifest.xml:49:13-87
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0d8b85e8d80d54a29a2c8133be891049/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2922521906db448f0c1979abe01717b3/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0d8b85e8d80d54a29a2c8133be891049/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2922521906db448f0c1979abe01717b3/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0d8b85e8d80d54a29a2c8133be891049/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2922521906db448f0c1979abe01717b3/AndroidManifest.xml:24:13-58

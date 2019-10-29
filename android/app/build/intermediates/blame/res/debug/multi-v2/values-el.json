@@ -4,7 +4,24 @@
             "outputFile": "/Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml",
             "map": [
                 {
-                    "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/7d4f07582bf69f285005997467d9488a/res/values-el/values.xml",
+                    "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/71686787d4da511e5b546f3c3b539354/res/values-el/values-el.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,167,271,366,466,578,687,797,915,1015,1125",
+                        "endColumns": "111,103,94,99,111,108,109,117,99,109,94",
+                        "endOffsets": "162,266,361,461,573,682,792,910,1010,1120,1215"
+                    },
+                    "to": {
+                        "startLines": "47,48,49,50,51,52,53,54,55,56,57",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "5734,5846,5950,6045,6145,6257,6366,6476,6594,6694,6804",
+                        "endColumns": "111,103,94,99,111,108,109,117,99,109,94",
+                        "endOffsets": "5841,5945,6040,6140,6252,6361,6471,6589,6689,6799,6894"
+                    }
+                },
+                {
+                    "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/30f810b7d90bef434966917674b0b788/res/values-el/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -72,24 +89,7 @@
                     }
                 },
                 {
-                    "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/dce7a19cdc3a3457505fd2c5bddcec60/res/values-el/values-el.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,167,271,366,466,578,687,797,915,1015,1125",
-                        "endColumns": "111,103,94,99,111,108,109,117,99,109,94",
-                        "endOffsets": "162,266,361,461,573,682,792,910,1010,1120,1215"
-                    },
-                    "to": {
-                        "startLines": "47,48,49,50,51,52,53,54,55,56,57",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "5734,5846,5950,6045,6145,6257,6366,6476,6594,6694,6804",
-                        "endColumns": "111,103,94,99,111,108,109,117,99,109,94",
-                        "endOffsets": "5841,5945,6040,6140,6252,6361,6471,6589,6689,6799,6894"
-                    }
-                },
-                {
-                    "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/0d8b85e8d80d54a29a2c8133be891049/res/values-el/values.xml",
+                    "source": "/Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2922521906db448f0c1979abe01717b3/res/values-el/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

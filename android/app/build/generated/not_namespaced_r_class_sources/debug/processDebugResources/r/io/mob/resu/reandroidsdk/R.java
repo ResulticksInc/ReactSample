@@ -3522,6 +3522,7 @@ public final class R {
         public static final int ActionBarLayout_android_layout_gravity = 0;
         public static final int[] ActionMenuItemView = { 0x101013f };
         public static final int ActionMenuItemView_android_minWidth = 0;
+        public static final int[] ActionMenuView = {  };
         public static final int[] ActionMode = { 0x7f020037, 0x7f020039, 0x7f020059, 0x7f02009e, 0x7f02011e, 0x7f020143 };
         public static final int ActionMode_background = 0;
         public static final int ActionMode_backgroundSplit = 1;

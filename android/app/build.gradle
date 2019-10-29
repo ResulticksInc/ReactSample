@@ -76,8 +76,8 @@ import com.android.build.OutputFile
  */
 
 project.ext.react = [
-        entryFile   : "index.js",
-        enableHermes: false,  // clean and rebuild if changing
+    entryFile: "index.js",
+    enableHermes: false,  // clean and rebuild if changing
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -193,14 +193,16 @@ dependencies {
     implementation project(':react-native-fcm')
     implementation "com.google.firebase:firebase-core:16.0.8"
     implementation "com.google.firebase:firebase-messaging:17.5.0"
-    implementation "io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:-SNAPSHOT"
+     //implementation "io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:5bbbb78c52"
+    implementation "io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT"
+    //implementation "io.resu:ReAndroidSDK_54b865b8_5123_461a_accf_d12ed01ce383:-SNAPSHOT"
 
     if (enableHermes) {
-        def hermesPath = "../../node_modules/hermesvm/android/";
-        debugImplementation files(hermesPath + "hermes-debug.aar")
-        releaseImplementation files(hermesPath + "hermes-release.aar")
+      def hermesPath = "../../node_modules/hermesvm/android/";
+      debugImplementation files(hermesPath + "hermes-debug.aar")
+      releaseImplementation files(hermesPath + "hermes-release.aar")
     } else {
-        implementation jscFlavor
+      implementation jscFlavor
     }
 }
 apply plugin: 'com.google.gms.google-services'

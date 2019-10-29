@@ -9,6 +9,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, NativeModules, Button } from 'react-native';
 
+import { DeviceEventEmitter } from 'react-native';
+
+DeviceEventEmitter.addListener('resulticksNotification', (event) => {
+	alert('resulticksNotification');
+});
+
 export default class App extends Component {
 	constructor(props) {
 		super(props);
@@ -30,6 +36,7 @@ export default class App extends Component {
 				'ftBTbiSgYdU:APA91bFuoBDx0o8MlD-aKfJRvmQszZ0_NLNPHplVCF91fQYRIqp2SXWqteWDg_qa5YzQAcQ71NjNj_rfqXa7Woq2decTlN81sZXopLO5nkwgsNlQVChW866DoONt27bKtA2QQGCOxNKn',
 			profileUrl: ''
 		};
+
 		NativeModules.ReReactNativeSDK.userRegister(JSON.stringify(resUser));
 	};
 
@@ -62,10 +69,13 @@ export default class App extends Component {
 	};
 
 	getNotification = () => {
+		console.log('Welcome Buvanesgh');
 		NativeModules.ReReactNativeSDK.getNotification((error, notifications) => {
 			console.log(notifications[0]);
 			var json = JSON.parse(notifications);
-			this.setState({ notifications: json });
+			this.setState({
+				notifications: json
+			});
 			alert(json[0]);
 		});
 	};
@@ -77,25 +87,13 @@ export default class App extends Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<Text style={styles.welcome}> Resulticks Sample APP!!</Text>
-				<View style={{ marginTop: 10 }}>
-					<Button onPress={this.register} title="User register" color="#FF6347" />
-				</View>
-				<View style={{ marginTop: 10 }}>
-					<Button onPress={this.customEvent} title="Custom Events " color="#FF6347" />
-				</View>
-				<View style={{ marginTop: 10 }}>
-					<Button onPress={this.userNavigation} title="User journey " color="#FF6347" />
-				</View>
-				<View style={{ marginTop: 10 }}>
-					<Button onPress={this.userlocationUpdate} title="Locaction Update " color="#FF6347" />
-				</View>
-				<View style={{ marginTop: 10 }}>
-					<Button onPress={this.getNotification} title="Get Notification " color="#FF6347" />
-				</View>
-				<View style={{ marginTop: 10 }}>
-					<Button onPress={this.deleteNotification} title="Delete Notification" color="#FF6347" />
-				</View>
+				<Text style={styles.welcome}> Welcome to Resulticks App!! </Text>
+				<Button onPress={this.register} title="register" color="#FF6347" />
+				<Button onPress={this.customEvent} title="customEvent" color="#FF6347" />
+				<Button onPress={this.userNavigation} title="screenStart" color="#FF6347" />
+				<Button onPress={this.userlocationUpdate} title="Locaction Update" color="#FF6347" />
+				<Button onPress={this.getNotification} title="getNotification" color="#FF6347" />
+				<Button onPress={this.deleteNotification} title="deleteNotification" color="#FF6347" />
 			</View>
 		);
 	}
