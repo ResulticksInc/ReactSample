@@ -7,6 +7,7 @@ INJECTED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app
 MERGED from /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/src/main/AndroidManifest.xml:1:1-93:12
 MERGED from [:react-native-fcm] /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/node_modules/react-native-fcm/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:2:1-46:12
+MERGED from [:react-native-gesture-handler] /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.60.5] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/5796d6c4f1b88f3b0b7701d32bde088b/AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.firebase:firebase-core:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2133a9604816d85fc041856afc3cdb05/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-messaging:20.0.0] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/30f810b7d90bef434966917674b0b788/AndroidManifest.xml:17:1-37:12
@@ -333,6 +334,8 @@ MERGED from [:react-native-fcm] /Users/Buvaneswaran/Documents/GitHub/React/React
 MERGED from [:react-native-fcm] /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/node_modules/react-native-fcm/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:7:5-9:41
 MERGED from [io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/b45dfd7d4caf1afb9b696e0e9fe1f685/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/Buvaneswaran/Documents/GitHub/React/ReactSample/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.60.5] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/5796d6c4f1b88f3b0b7701d32bde088b/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.60.5] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/5796d6c4f1b88f3b0b7701d32bde088b/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-core:17.2.1] /Users/Buvaneswaran/.gradle/caches/transforms-2/files-2.1/2133a9604816d85fc041856afc3cdb05/AndroidManifest.xml:5:5-44

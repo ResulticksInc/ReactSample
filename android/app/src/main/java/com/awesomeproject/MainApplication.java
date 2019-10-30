@@ -11,18 +11,17 @@ import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
-import com.facebook.soloader.SoLoader;
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 
+import com.facebook.soloader.SoLoader;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 import io.mob.resu.reandroidsdk.AppConstants;
 import io.mob.resu.reandroidsdk.ReAndroidSDK;
 import io.mob.resu.reandroidsdk.ReReactNativeSDKPackage;
@@ -40,7 +39,7 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             AppConstants.LogFlag = true;
             return Arrays.<ReactPackage>asList(new MainReactPackage(), new FIRMessagingPackage(),
-                    new ReReactNativeSDKPackage());
+                    new ReReactNativeSDKPackage(),new RNGestureHandlerPackage());
         }
 
         protected String getJSMainModuleName() {
@@ -56,7 +55,9 @@ public class MainApplication extends Application implements ReactApplication {
 
     @Override
     public void onCreate() {
+
         super.onCreate();
+        AppConstants.LogFlag = true;
         ReAndroidSDK.getInstance(this);
         getAppDetails(this);
         SoLoader.init(this, /* native exopackage */ false);

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Oct 29 16:29:23 IST 2019
+#Wed Oct 30 21:18:09 IST 2019
 56.path=lib/x86_64/libc++_shared.so
 5.base=/Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/build/intermediates/transforms/mergeJniLibs/debug/0
 42.base=/Users/Buvaneswaran/Documents/GitHub/React/ReactSample/android/app/build/intermediates/transforms/mergeJniLibs/debug/0

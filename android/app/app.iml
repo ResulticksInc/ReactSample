@@ -160,5 +160,6 @@
     <orderEntry type="library" name="Gradle: io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT@aar" level="project" />
     <orderEntry type="library" name="Gradle: org.webkit:android-jsc:r245459@aar" level="project" />
     <orderEntry type="module" module-name="react-native-fcm" />
+    <orderEntry type="module" module-name="react-native-gesture-handler" />
   </component>
 </module>

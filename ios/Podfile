@@ -27,7 +27,6 @@ target 'AwesomeProject' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
   target 'AwesomeProjectTests' do
     inherit! :search_paths
@@ -35,14 +34,4 @@ target 'AwesomeProject' do
   end
 
   use_native_modules!
-end
-
-target 'AwesomeProject-tvOS' do
-  # Pods for AwesomeProject-tvOS
-
-  target 'AwesomeProject-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end

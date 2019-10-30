@@ -15,6 +15,8 @@ import com.awesomeproject.R;
 
 // react-native-fcm
 import com.evollu.react.fcm.FIRMessagingPackage;
+// react-native-gesture-handler
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 
 public class PackageList {
   private Application application;
@@ -48,7 +50,8 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(),
-      new FIRMessagingPackage()
+      new FIRMessagingPackage(),
+      new RNGestureHandlerPackage()
     ));
   }
 }
