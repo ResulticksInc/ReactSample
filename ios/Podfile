@@ -1,4 +1,4 @@
-platform :ios, '9.0'
+platform :ios, '10.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 target 'AwesomeProject' do
@@ -27,6 +27,10 @@ target 'AwesomeProject' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  #pod 'REIOSSDK_54b865b8_5123_461a_accf_d12ed01ce383'
+  pod 'RNReiossdkrnSdk', :podspec => '../node_modules/react-native-reiossdkrn-sdk/RNReiossdkrnSdk.podspec'
+
+ 
 
   target 'AwesomeProjectTests' do
     inherit! :search_paths
@@ -35,3 +39,4 @@ target 'AwesomeProject' do
 
   use_native_modules!
 end
+
