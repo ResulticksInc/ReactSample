@@ -7,7 +7,7 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, NativeModules, Button, AsyncStorage } from 'react-native';
+import { StyleSheet, Text, View, NativeModules, Button, AsyncStorage,Platform } from 'react-native';
 
 import { DeviceEventEmitter } from 'react-native';
 
@@ -24,13 +24,15 @@ import App from './App';
 import Constants from './Constants';
 
 var screenName = '';
+if(Platform.OS != "ios"){
+  DeviceEventEmitter.addListener('resulticksNotification', (event) => {
+  	let customParam1 = JSON.parse(event.customParams);
+  	screenName = customParam1.screenName;
+  	console.log('Router :' + screenName);
+  	Constants.setScreenName(screenName);
+  });
+}
 
-DeviceEventEmitter.addListener('resulticksNotification', (event) => {
-	let customParam1 = JSON.parse(event.customParams);
-	screenName = customParam1.screenName;
-	console.log('Router :' + screenName);
-	Constants.setScreenName(screenName);
-});
 
 function getActiveRouteName(navigationState) {
 	if (!navigationState) {

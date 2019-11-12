@@ -413,18 +413,14 @@ NS_SWIFT_NAME(Messaging)
 #pragma mark - Topics
 
 /**
- *  Asynchronously subscribes to a topic. This uses a FCM Token to identify
- *  the app instance and periodically sends data to the Firebase backend. To stop this, see
- *  `[FIRInstanceID deleteIDWithHandler:]`.
+ *  Asynchronously subscribes to a topic.
  *
  *  @param topic The name of the topic, for example, @"sports".
  */
 - (void)subscribeToTopic:(NSString *)topic NS_SWIFT_NAME(subscribe(toTopic:));
 
 /**
- *  Asynchronously subscribe to the provided topic, retrying on failure. This uses a FCM Token
- *  to identify the app instance and periodically sends data to the Firebase backend. To stop this,
- *  see `[FIRInstanceID deleteIDWithHandler:]`.
+ *  Asynchronously subscribe to the provided topic, retrying on failure.
  *
  *  @param topic       The topic name to subscribe to, for example, @"sports".
  *  @param completion  The completion that is invoked once the subscribe call ends.
@@ -435,18 +431,14 @@ NS_SWIFT_NAME(Messaging)
               completion:(nullable FIRMessagingTopicOperationCompletion)completion;
 
 /**
- *  Asynchronously unsubscribe from a topic.  This uses a FCM Token
- *  to identify the app instance and periodically sends data to the Firebase backend. To stop this,
- *  see `[FIRInstanceID deleteIDWithHandler:]`.
+ *  Asynchronously unsubscribe from a topic.
  *
  *  @param topic The name of the topic, for example @"sports".
  */
 - (void)unsubscribeFromTopic:(NSString *)topic NS_SWIFT_NAME(unsubscribe(fromTopic:));
 
 /**
- *  Asynchronously unsubscribe from the provided topic, retrying on failure. This uses a FCM Token
- *  to identify the app instance and periodically sends data to the Firebase backend. To stop this,
- *  see `[FIRInstanceID deleteIDWithHandler:]`.
+ *  Asynchronously unsubscribe from the provided topic, retrying on failure.
  *
  *  @param topic       The topic name to unsubscribe from, for example @"sports".
  *  @param completion  The completion that is invoked once the unsubscribe call ends.

@@ -12,8 +12,24 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		3DB19C3AAF4AD0DC3E58A4DD /* libPods-AwesomeProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21336B261115563CD3C811B7 /* libPods-AwesomeProject.a */; };
-		D703E57EDBF3AFCE8BE08123 /* libPods-AwesomeProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49723097E117CC734751B534 /* libPods-AwesomeProjectTests.a */; };
+		19BAB7F063D4EC433DF053EF /* libPods-AwesomeProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AAB2ACB72FABAD9C007C1E /* libPods-AwesomeProject.a */; };
+		2706EBE22371387C00E0C9D8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2706EBD82371384F00E0C9D8 /* Alamofire.framework */; };
+		2706EBE32371387C00E0C9D8 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2706EBD82371384F00E0C9D8 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2706EBE42371387E00E0C9D8 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2706EBD92371384F00E0C9D8 /* CryptoSwift.framework */; };
+		2706EBE52371387E00E0C9D8 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2706EBD92371384F00E0C9D8 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2706EBE62371388000E0C9D8 /* IDZSwiftCommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2706EBD72371384F00E0C9D8 /* IDZSwiftCommonCrypto.framework */; };
+		2706EBE72371388000E0C9D8 /* IDZSwiftCommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2706EBD72371384F00E0C9D8 /* IDZSwiftCommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2706EBEA2371388400E0C9D8 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2706EBD62371384F00E0C9D8 /* SocketIO.framework */; };
+		2706EBEB2371388400E0C9D8 /* SocketIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2706EBD62371384F00E0C9D8 /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2706EBEC2371388600E0C9D8 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2706EBDB2371384F00E0C9D8 /* Starscream.framework */; };
+		2706EBED2371388600E0C9D8 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2706EBDB2371384F00E0C9D8 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2706EBF92372972E00E0C9D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2706EBF82372972E00E0C9D8 /* GoogleService-Info.plist */; };
+		2706EBFC2372AABB00E0C9D8 /* ReReactNativeSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 2706EBFA2372AABB00E0C9D8 /* ReReactNativeSDK.m */; };
+		2728A295237A6B0C00BADCD3 /* REIOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27317795237A674000C79FC8 /* REIOSSDK.framework */; };
+		2728A296237A6B0C00BADCD3 /* REIOSSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27317795237A674000C79FC8 /* REIOSSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		276FA2A5237485EA00D13A11 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 276FA2A4237485EA00D13A11 /* main.jsbundle */; };
+		27CFBF3223792A3D00556F09 /* AppDelegateCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CFBF3023791F4000556F09 /* AppDelegateCategory.m */; };
+		DA98BAC9804B4294B07859B9 /* libPods-AwesomeProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68245F478202F47A490C21 /* libPods-AwesomeProjectTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,8 +42,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2706EBC72371287100E0C9D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2706EBE32371387C00E0C9D8 /* Alamofire.framework in Embed Frameworks */,
+				2706EBED2371388600E0C9D8 /* Starscream.framework in Embed Frameworks */,
+				2728A296237A6B0C00BADCD3 /* REIOSSDK.framework in Embed Frameworks */,
+				2706EBE72371388000E0C9D8 /* IDZSwiftCommonCrypto.framework in Embed Frameworks */,
+				2706EBEB2371388400E0C9D8 /* SocketIO.framework in Embed Frameworks */,
+				2706EBE52371387E00E0C9D8 /* CryptoSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* AwesomeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* AwesomeProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeProjectTests.m; sourceTree = "<group>"; };
@@ -38,20 +72,27 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AwesomeProject/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AwesomeProject/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AwesomeProject/main.m; sourceTree = "<group>"; };
-		21336B261115563CD3C811B7 /* libPods-AwesomeProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		21E46C6B7DD216ABA717BF9E /* Pods-AwesomeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProject/Pods-AwesomeProject.release.xcconfig"; sourceTree = "<group>"; };
-		2CBF3A7F7A630306D5E378CC /* Pods-AwesomeProject-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeProject-tvOS/Pods-AwesomeProject-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		49723097E117CC734751B534 /* libPods-AwesomeProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		535FBE848DD7784A7FFABE70 /* Pods-AwesomeProject-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeProject-tvOSTests/Pods-AwesomeProject-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		785A6DA33618223A40CCA1AE /* Pods-AwesomeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProjectTests/Pods-AwesomeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
-		7C56B7FAE427725BD1FDF9F3 /* Pods-AwesomeProject-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject-tvOS.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProject-tvOS/Pods-AwesomeProject-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		8AC6B5841D13272255A5A3F4 /* Pods-AwesomeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeProject/Pods-AwesomeProject.debug.xcconfig"; sourceTree = "<group>"; };
-		B15BB54289B8C807D366BC43 /* libPods-AwesomeProject-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeProject-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B607B2BCECC9CC48B90B8CA6 /* libPods-AwesomeProject-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeProject-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCBD3AB43C2A9156A82CB273 /* Pods-AwesomeProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeProjectTests/Pods-AwesomeProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D02AAE0EB8C2994A33CDAEF0 /* Pods-AwesomeProject-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProject-tvOSTests/Pods-AwesomeProject-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		2706EBD62371384F00E0C9D8 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SocketIO.framework; sourceTree = "<group>"; };
+		2706EBD72371384F00E0C9D8 /* IDZSwiftCommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IDZSwiftCommonCrypto.framework; sourceTree = "<group>"; };
+		2706EBD82371384F00E0C9D8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		2706EBD92371384F00E0C9D8 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = "<group>"; };
+		2706EBDB2371384F00E0C9D8 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Starscream.framework; sourceTree = "<group>"; };
+		2706EBF72372950000E0C9D8 /* AwesomeProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = AwesomeProject.entitlements; path = AwesomeProject/AwesomeProject.entitlements; sourceTree = "<group>"; };
+		2706EBF82372972E00E0C9D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2706EBFA2372AABB00E0C9D8 /* ReReactNativeSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReReactNativeSDK.m; sourceTree = "<group>"; };
+		2706EBFB2372AABB00E0C9D8 /* ReReactNativeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReReactNativeSDK.h; sourceTree = "<group>"; };
+		27317795237A674000C79FC8 /* REIOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = REIOSSDK.framework; sourceTree = "<group>"; };
+		276FA2A4237485EA00D13A11 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		27CFBF2F23791F4000556F09 /* AppDelegateCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegateCategory.h; sourceTree = "<group>"; };
+		27CFBF3023791F4000556F09 /* AppDelegateCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegateCategory.m; sourceTree = "<group>"; };
+		2D68245F478202F47A490C21 /* libPods-AwesomeProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		433C0CFA75A8A66DD07DDF54 /* Pods-AwesomeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProject/Pods-AwesomeProject.release.xcconfig"; sourceTree = "<group>"; };
+		65AAB2ACB72FABAD9C007C1E /* libPods-AwesomeProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78F83C8910CA474D19705952 /* Pods-AwesomeProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeProjectTests/Pods-AwesomeProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DAC5D91E653F9C3F343B27AB /* Pods-AwesomeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeProject/Pods-AwesomeProject.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F3ED96EE1FB9BDA265BE23E6 /* Pods-AwesomeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProjectTests/Pods-AwesomeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D703E57EDBF3AFCE8BE08123 /* libPods-AwesomeProjectTests.a in Frameworks */,
+				DA98BAC9804B4294B07859B9 /* libPods-AwesomeProjectTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +108,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DB19C3AAF4AD0DC3E58A4DD /* libPods-AwesomeProject.a in Frameworks */,
+				2706EBE22371387C00E0C9D8 /* Alamofire.framework in Frameworks */,
+				2706EBE42371387E00E0C9D8 /* CryptoSwift.framework in Frameworks */,
+				2706EBE62371388000E0C9D8 /* IDZSwiftCommonCrypto.framework in Frameworks */,
+				2706EBEC2371388600E0C9D8 /* Starscream.framework in Frameworks */,
+				2728A295237A6B0C00BADCD3 /* REIOSSDK.framework in Frameworks */,
+				2706EBEA2371388400E0C9D8 /* SocketIO.framework in Frameworks */,
+				19BAB7F063D4EC433DF053EF /* libPods-AwesomeProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,13 +141,18 @@
 		13B07FAE1A68108700A75B9A /* AwesomeProject */ = {
 			isa = PBXGroup;
 			children = (
-				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				2706EBF72372950000E0C9D8 /* AwesomeProject.entitlements */,
+				2706EBFB2372AABB00E0C9D8 /* ReReactNativeSDK.h */,
+				2706EBFA2372AABB00E0C9D8 /* ReReactNativeSDK.m */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				276FA2A4237485EA00D13A11 /* main.jsbundle */,
+				27CFBF2F23791F4000556F09 /* AppDelegateCategory.h */,
+				27CFBF3023791F4000556F09 /* AppDelegateCategory.m */,
 			);
 			name = AwesomeProject;
 			sourceTree = "<group>";
@@ -108,12 +160,16 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27317795237A674000C79FC8 /* REIOSSDK.framework */,
+				2706EBD82371384F00E0C9D8 /* Alamofire.framework */,
+				2706EBD92371384F00E0C9D8 /* CryptoSwift.framework */,
+				2706EBD72371384F00E0C9D8 /* IDZSwiftCommonCrypto.framework */,
+				2706EBD62371384F00E0C9D8 /* SocketIO.framework */,
+				2706EBDB2371384F00E0C9D8 /* Starscream.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				21336B261115563CD3C811B7 /* libPods-AwesomeProject.a */,
-				B15BB54289B8C807D366BC43 /* libPods-AwesomeProject-tvOS.a */,
-				B607B2BCECC9CC48B90B8CA6 /* libPods-AwesomeProject-tvOSTests.a */,
-				49723097E117CC734751B534 /* libPods-AwesomeProjectTests.a */,
+				65AAB2ACB72FABAD9C007C1E /* libPods-AwesomeProject.a */,
+				2D68245F478202F47A490C21 /* libPods-AwesomeProjectTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,14 +177,10 @@
 		3536C898D6E102F63955A992 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8AC6B5841D13272255A5A3F4 /* Pods-AwesomeProject.debug.xcconfig */,
-				21E46C6B7DD216ABA717BF9E /* Pods-AwesomeProject.release.xcconfig */,
-				2CBF3A7F7A630306D5E378CC /* Pods-AwesomeProject-tvOS.debug.xcconfig */,
-				7C56B7FAE427725BD1FDF9F3 /* Pods-AwesomeProject-tvOS.release.xcconfig */,
-				535FBE848DD7784A7FFABE70 /* Pods-AwesomeProject-tvOSTests.debug.xcconfig */,
-				D02AAE0EB8C2994A33CDAEF0 /* Pods-AwesomeProject-tvOSTests.release.xcconfig */,
-				BCBD3AB43C2A9156A82CB273 /* Pods-AwesomeProjectTests.debug.xcconfig */,
-				785A6DA33618223A40CCA1AE /* Pods-AwesomeProjectTests.release.xcconfig */,
+				DAC5D91E653F9C3F343B27AB /* Pods-AwesomeProject.debug.xcconfig */,
+				433C0CFA75A8A66DD07DDF54 /* Pods-AwesomeProject.release.xcconfig */,
+				78F83C8910CA474D19705952 /* Pods-AwesomeProjectTests.debug.xcconfig */,
+				F3ED96EE1FB9BDA265BE23E6 /* Pods-AwesomeProjectTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -143,6 +195,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				2706EBF82372972E00E0C9D8 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* AwesomeProject */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* AwesomeProjectTests */,
@@ -171,7 +224,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AwesomeProjectTests" */;
 			buildPhases = (
-				DADC72D833321F221A3073EE /* [CP] Check Pods Manifest.lock */,
+				BE6DBF7310F7FE43FAAB1A2B /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -190,12 +243,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AwesomeProject" */;
 			buildPhases = (
-				63927DBD29A4AC6184BD3F55 /* [CP] Check Pods Manifest.lock */,
+				BCC3AE3336E49A81B1EB1FF9 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				2706EBC72371287100E0C9D8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,6 +276,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 9G6WTL8BCF;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -258,7 +313,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				2706EBF92372972E00E0C9D8 /* GoogleService-Info.plist in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				276FA2A5237485EA00D13A11 /* main.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,9 +334,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		63927DBD29A4AC6184BD3F55 /* [CP] Check Pods Manifest.lock */ = {
+		BCC3AE3336E49A81B1EB1FF9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -301,7 +358,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DADC72D833321F221A3073EE /* [CP] Check Pods Manifest.lock */ = {
+		BE6DBF7310F7FE43FAAB1A2B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -357,6 +414,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27CFBF3223792A3D00556F09 /* AppDelegateCategory.m in Sources */,
+				2706EBFC2372AABB00E0C9D8 /* ReReactNativeSDK.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -387,7 +446,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCBD3AB43C2A9156A82CB273 /* Pods-AwesomeProjectTests.debug.xcconfig */;
+			baseConfigurationReference = 78F83C8910CA474D19705952 /* Pods-AwesomeProjectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 9G6WTL8BCF;
@@ -411,7 +470,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 785A6DA33618223A40CCA1AE /* Pods-AwesomeProjectTests.release.xcconfig */;
+			baseConfigurationReference = F3ED96EE1FB9BDA265BE23E6 /* Pods-AwesomeProjectTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -432,13 +491,20 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AC6B5841D13272255A5A3F4 /* Pods-AwesomeProject.debug.xcconfig */;
+			baseConfigurationReference = DAC5D91E653F9C3F343B27AB /* Pods-AwesomeProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AwesomeProject/AwesomeProject.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 9G6WTL8BCF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AwesomeProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -447,18 +513,27 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.interakt.visionretail;
 				PRODUCT_NAME = AwesomeProject;
+				PROVISIONING_PROFILE_SPECIFIER = visionretail_dev_provisioning_profile;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21E46C6B7DD216ABA717BF9E /* Pods-AwesomeProject.release.xcconfig */;
+			baseConfigurationReference = 433C0CFA75A8A66DD07DDF54 /* Pods-AwesomeProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AwesomeProject/AwesomeProject.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9G6WTL8BCF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AwesomeProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -467,6 +542,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.interakt.visionretail;
 				PRODUCT_NAME = AwesomeProject;
+				PROVISIONING_PROFILE_SPECIFIER = visionretail_dev_provisioning_profile;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>745704678642-j4srg18vs7a77b6rijr3dl8rqvi6e6vg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.745704678642-j4srg18vs7a77b6rijr3dl8rqvi6e6vg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBE9iRxNiqduVdeoB1ER7Q9A-Vla71m36k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>745704678642</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.interakt.visionretail</string>
+	<key>PROJECT_ID</key>
+	<string>vision-bank-ios</string>
+	<key>STORAGE_BUCKET</key>
+	<string>vision-bank-ios.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:745704678642:ios:fcb79b30c8ff0bc1</string>
+	<key>DATABASE_URL</key>
+	<string>https://vision-bank-ios.firebaseio.com</string>
+</dict>
+</plist>

@@ -27,10 +27,12 @@ target 'AwesomeProject' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  #pod 'REIOSSDK_54b865b8_5123_461a_accf_d12ed01ce383'
-  pod 'RNReiossdkrnSdk', :podspec => '../node_modules/react-native-reiossdkrn-sdk/RNReiossdkrnSdk.podspec'
-
  
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging', '~> 6.3.0'
+ 
+
+  pod 'RNFirebase', :path => '../node_modules/react-native-firebase/ios'
 
   target 'AwesomeProjectTests' do
     inherit! :search_paths

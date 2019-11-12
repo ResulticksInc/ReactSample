@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#import <FirebaseMessaging/FIRMessaging.h>
-#import "Firebase/Messaging/FIRMessagingDataMessageManager.h"
+#import "FIRMessagingDataMessageManager.h"
+#import "FIRMessaging.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
