@@ -13,6 +13,8 @@ import { DeviceEventEmitter } from 'react-native';
 
 import BaseComponent from './BaseComponent';
 
+import firebase from 'react-native-firebase'
+
 if(Platform.OS == "ios"){
 	firebase.notifications().onNotification((notification) => {
 
