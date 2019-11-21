@@ -9,48 +9,27 @@
 #import <REIOSSDK/REIOSSDK.h>
 #import "ReReactNativeSDK.h"
 #import <UserNotifications/UserNotifications.h>
+#import <UIKit/UIKit.h>
 
 @implementation ReReactNativeSDK
 
 RCT_EXPORT_MODULE();
 
-// 1. REIOSSDK login register
+// 1. REIOSSDK login or register
 
 RCT_EXPORT_METHOD(userRegister:(NSString *)userRegister) {
   NSError *err = nil;
   NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:[userRegister dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:&err];
-  NSLog(@"Dict is %@",dict);
-  [[NSNotificationCenter defaultCenter] addObserver:self
-         selector:@selector(receiveTestNotification:)
-         name:@"RCTContentDidAppearNotification"
-         object:nil];
-  [[NSNotificationCenter defaultCenter] addObserver:self
-          selector:@selector(receiveTestNotification:)
-          name:@"RCTOpenURLNotification"
-          object:nil];
-  [[NSNotificationCenter defaultCenter] addObserver:self
-          selector:@selector(receiveTestNotification:)
-          name:@"FIRAppDiagnosticsNotification"
-          object:nil];
+  NSLog(@"User register data: %@",dict);
   [REiosHandler sdkRegistrationWithDictWithParams:dict];
 }
 
-
-- (void) receiveTestNotification:(NSNotification *) notification
-{
-    // [notification name] should always be @"TestNotification"
-    // unless you use this method for observation of other notifications
-    // as well.
-    NSLog(@"Notification Receive %@",notification);
-    if ([[notification name] isEqualToString:@"TestNotification"])
-        NSLog (@"Successfully received the test notification!");
-}
 // 2. REIOSSDK custom event
 
 RCT_EXPORT_METHOD(customEvent:(NSString *)customEvent) {
   NSError *err = nil;
   NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:[customEvent dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:&err];
-  NSLog(@"Dict is %@",dict);
+  NSLog(@"Custom event data: %@",dict);
   
   NSDictionary *dataDict = dict[@"data"];
   
@@ -58,23 +37,16 @@ RCT_EXPORT_METHOD(customEvent:(NSString *)customEvent) {
   NSError *error;
   
   NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dataDict
-  options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
-    error:&error];
+                                                     options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
+                                                       error:&error];
   
-//
-//     // NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
-//                                                    options:(NSJSONWritingOptions)    (testDict ? NSJSONWritingPrettyPrinted : 0)
-//                                                      error:&error];
-
-      if (! jsonData) {
-         NSLog(@"%s: error: %@", __func__, error.localizedDescription);
-        
-      } else {
-        dataStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-      }
+  if (! jsonData) {
+    NSLog(@"%s: error: %@", __func__, error.localizedDescription);
+    
+  } else {
+    dataStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+  }
   
-  
-
   [REiosHandler addEventWithEventName:dict[@"eventName"] data:dataStr];
 }
 
@@ -92,8 +64,8 @@ RCT_EXPORT_METHOD(locationUpdate:(NSString *)locationUpdate) {
   NSLog(@"Dict is %@",dict);
   
   NSString *latStr = [NSString stringWithFormat:@"%@",dict[@"latitude"]];
-   NSString *longStr = [NSString stringWithFormat:@"%@",dict[@"longitude"]];
-
+  NSString *longStr = [NSString stringWithFormat:@"%@",dict[@"longitude"]];
+  
   [REiosHandler updateLocationWithLat:latStr long:longStr];
 }
 
@@ -109,45 +81,111 @@ RCT_EXPORT_METHOD(deleteNotification:(NSString *)deleteNotification) {
   [REiosHandler deleteNotificationListWithDict:dict];
 }
 
-RCT_EXPORT_METHOD(onNotificationPayloadReceiver:(NSString *)onNotificationPayloadReceiver) {
+RCT_EXPORT_METHOD(onNotificationPayloadReceiver:(NSString *)onNotificationPayloadReceiver state: (int)currentState) {
+  
   NSError *err = nil;
   NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:[onNotificationPayloadReceiver dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:&err];
-  NSLog(@"Dict is %@",dict);
+  
+  NSLog(@"\n\n **** Received notification from bridging file **** \n %@ \n **** \n\n",dict);
+  
   NSDictionary *data = dict[@"_data"];
   NSDictionary *ios = dict[@"_ios"];
+  
+  NSString *category = @"";
+  if([ios objectForKey:@"_category"]){
+    category = ios[@"_category"];
+  }
   NSString *sound = @"";
   if([dict objectForKey:@"_sound"]){
     sound = dict[@"_sound"];
   }
+  NSString *badge = @"";
+  if([ios objectForKey:@"_badge"]){
+    badge = ios[@"_badge"];
+  }
+  NSString *actionIdentifier = @"";
+  if([dict objectForKey:@"actionIdentifier"]){
+    actionIdentifier = dict[@"actionIdentifier"];
+  }
+  NSString *screenUrl = @"";
+  if([data objectForKey:@"screenUrl"]){
+    screenUrl = data[@"screenUrl"];
+  }
+  NSString *_id = @"";
+  if([data objectForKey:@"id"]){
+    _id = data[@"id"];
+  }
+  NSString *_mobileFriendlyUrl = @"";
+  if([data objectForKey:@"mobileFriendlyUrl"]){
+    _mobileFriendlyUrl = data[@"mobileFriendlyUrl"];
+  }
+  NSString *_duration = @"";
+  if([data objectForKey:@"duration"]){
+    _duration = data[@"duration"];
+  }
+  NSString *_customParams = @"";
+  if([data objectForKey:@"customParams"]){
+    _customParams = data[@"customParams"];
+  }
+  NSString *_title = @"";
+  if([dict objectForKey:@"_title"]){
+    _title = dict[@"_title"];
+  }
+  NSString *_body = @"";
+  if([dict objectForKey:@"_body"]){
+    _body = dict[@"_body"];
+  }
+  NSString *_attachmentUrl = @"";
+  if([data objectForKey:@"attachment-url"]){
+    _attachmentUrl = data[@"attachment-url"];
+  }
+  
   id userInfo = @{
     @"data":@{
-        @"screenUrl":data[@"screenUrl"],
-        @"id":data[@"id"],
-        @"mobileFriendlyUrl":data[@"mobileFriendlyUrl"],
-        @"duration":data[@"duration"]
+        @"screenUrl":screenUrl,
+        @"id":_id,
+        @"mobileFriendlyUrl":_mobileFriendlyUrl,
+        @"duration":_duration,
+        @"customParams": _customParams
     },
     @"aps":@{
         @"alert":@{
-            @"title":dict[@"_title"],
-            @"body":dict[@"_body"]
+            @"title":_title,
+            @"body":_body
         },
-        @"category":ios[@"_category"],
-        @"badge":ios[@"_badge"],
+        @"category":category,
+        @"badge":badge,
         @"mutable-content":@YES,
-        @"sound":sound,
-        
+        @"sound":sound
     },
-    @"attachmentUrl":data[@"attachment-url"],
-    @"actionIdentifier":dict[@"actionIdentifier"]
+    @"attachmentUrl":_attachmentUrl,
+    @"actionIdentifier":actionIdentifier
   };
-  NSLog(@" User Info %@" , userInfo);
   
-  [[REiosHandler getNotification] setNotificationActionWithResponse:userInfo];
+  
+  NSLog(@"\n\n **** Modified notification from bridging file **** \n %@ \n **** \n\n",userInfo);
+
+  if (currentState == 1) {
+    
+    [[REiosHandler getNotification] setForegroundNotificationWithData:userInfo completionHandler:^(UNNotificationPresentationOptions options) {
+      
+      NSLog(@"options %lu", (unsigned long)options);
+      
+    }];
+    
+  } else if (currentState == 2) {
+    [[REiosHandler getNotification] setNotificationActionWithResponse:userInfo];
+    
+  } else if (currentState == 3) {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 7 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+      [[REiosHandler getNotification] setNotificationActionWithResponse:userInfo];
+    });
+    
+  } else {
+    NSLog(@"Unknown state");
+  }
+  
 }
-
-
-
-
 
 
 @end

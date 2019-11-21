@@ -10,7 +10,7 @@
 #import <UserNotifications/UserNotifications.h>
 #import <Firebase.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, RCTBridgeDelegate,UNUserNotificationCenterDelegate,FIRMessagingDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, RCTBridgeDelegate,FIRMessagingDelegate>
 
 @property (nonatomic, strong) UIWindow *window;
 

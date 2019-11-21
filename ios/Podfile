@@ -34,6 +34,8 @@ target 'AwesomeProject' do
 
   pod 'RNFirebase', :path => '../node_modules/react-native-firebase/ios'
 
+  pod 'react-native-fcm', :path => '../node_modules/react-native-fcm'
+
   target 'AwesomeProjectTests' do
     inherit! :search_paths
     # Pods for testing

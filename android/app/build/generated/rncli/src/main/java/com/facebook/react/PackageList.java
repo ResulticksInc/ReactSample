@@ -13,8 +13,8 @@ import java.util.ArrayList;
 import com.awesomeproject.BuildConfig;
 import com.awesomeproject.R;
 
-// react-native-fcm
-import com.evollu.react.fcm.FIRMessagingPackage;
+// react-native-firebase
+import io.invertase.firebase.RNFirebasePackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 
@@ -50,7 +50,7 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(),
-      new FIRMessagingPackage(),
+      new RNFirebasePackage(),
       new RNGestureHandlerPackage()
     ));
   }

@@ -6,30 +6,35 @@ import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.content.res.XmlResourceParser;
 
-import com.evollu.react.fcm.FIRMessagingPackage;
+
 import com.facebook.react.ReactApplication;
+import com.evollu.react.fcm.FIRMessagingPackage;
 import io.invertase.firebase.RNFirebasePackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
-import com.facebook.soloader.SoLoader;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 
+import com.facebook.soloader.SoLoader;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import io.invertase.firebase.config.RNFirebaseRemoteConfigPackage;
+import io.invertase.firebase.messaging.RNFirebaseMessagingPackage;
+import io.invertase.firebase.notifications.RNFirebaseNotificationsPackage;
 import io.mob.resu.reandroidsdk.AppConstants;
 import io.mob.resu.reandroidsdk.ReAndroidSDK;
 import io.mob.resu.reandroidsdk.ReReactNativeSDKPackage;
 import io.mob.resu.reandroidsdk.error.Log;
+import io.invertase.firebase.messaging.RNFirebaseMessaging;
 
+import io.invertase.firebase.RNFirebasePackage;
 public class MainApplication extends Application implements ReactApplication {
 
     private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
@@ -42,8 +47,9 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             AppConstants.LogFlag = true;
             return Arrays.<ReactPackage>asList(new MainReactPackage(),
-            new RNFirebasePackage(), new FIRMessagingPackage(),
-                    new ReReactNativeSDKPackage(), new RNGestureHandlerPackage());
+            new FIRMessagingPackage(),
+                new RNFirebaseMessagingPackage(),new RNFirebasePackage(),new RNFirebaseNotificationsPackage(),
+                    new ReReactNativeSDKPackage(),new RNGestureHandlerPackage());
         }
 
         protected String getJSMainModuleName() {
@@ -61,6 +67,8 @@ public class MainApplication extends Application implements ReactApplication {
     public void onCreate() {
 
         super.onCreate();
+
+        AppConstants.LogFlag = true;
         ReAndroidSDK.getInstance(this);
         getAppDetails(this);
         SoLoader.init(this, /* native exopackage */ false);

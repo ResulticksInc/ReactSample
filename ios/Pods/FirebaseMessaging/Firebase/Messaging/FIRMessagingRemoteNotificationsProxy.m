@@ -487,7 +487,7 @@ void FCM_swizzle_willPresentNotificationWithHandler(
 
   [[FIRMessaging messaging] appDidReceiveMessage:notificationUserInfo];
     
-    
+  //  [[NSNotificationCenter defaultCenter]postNotificationName:@"TestNotification" object:notificationUserInfo];
     
   // Execute the original implementation.
   callOriginalMethodIfAvailable();

@@ -188,12 +188,28 @@ android {
 }
 
 dependencies {
-    implementation project(':react-native-firebase')
-    implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation project(':react-native-fcm')
-    implementation "com.google.firebase:firebase-core:16.0.8"
-    implementation "com.google.firebase:firebase-messaging:17.5.0"
+
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "com.facebook.react:react-native:+"// From node_modules
+//    implementation "com.android.support:appcompact-v7:+"
+    implementation project(':react-native-firebase')
+
+    implementation "com.google.android.gms:play-services-base:16.1.0"
+    implementation "com.google.firebase:firebase-core:16.0.9"
+
+        // ...
+        implementation "com.google.firebase:firebase-messaging:18.0.0"
+        implementation 'me.leolin:ShortcutBadger:1.1.21@aar' // <-- Add this line if you wish to use badge on Android
+
+
+
+
+
+//    implementation "com.google.firebase:firebase-core:16.0.1"
+
+
      //implementation "io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:5bbbb78c52"
     implementation "io.resu:ReAndroidSDK_0f5716ce_a0b3_4789_83c7_4dc54babca67:-SNAPSHOT"
     //implementation "io.resu:ReAndroidSDK_54b865b8_5123_461a_accf_d12ed01ce383:-SNAPSHOT"
@@ -208,6 +224,7 @@ dependencies {
 }
 apply plugin: 'com.google.gms.google-services'
 
+
 // Run this once to be able to run the application with BUCK
 // puts all compile dependencies into folder libs for BUCK to use
 task copyDownloadableDepsToLibs(type: Copy) {
@@ -216,3 +233,5 @@ task copyDownloadableDepsToLibs(type: Copy) {
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+
+
