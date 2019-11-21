@@ -32,8 +32,12 @@
 		276FA2A5237485EA00D13A11 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 276FA2A4237485EA00D13A11 /* main.jsbundle */; };
 		27CFBF3223792A3D00556F09 /* AppDelegateCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CFBF3023791F4000556F09 /* AppDelegateCategory.m */; };
 		DA98BAC9804B4294B07859B9 /* libPods-AwesomeProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68245F478202F47A490C21 /* libPods-AwesomeProjectTests.a */; };
-		FFAF70A023866681007F5800 /* REIOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF709E23866639007F5800 /* REIOSSDK.framework */; };
-		FFAF70A123866681007F5800 /* REIOSSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF709E23866639007F5800 /* REIOSSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFAF70A92386723B007F5800 /* REIOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF70A723867237007F5800 /* REIOSSDK.framework */; };
+		FFAF70AA2386723B007F5800 /* REIOSSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF70A723867237007F5800 /* REIOSSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFAF70AF2386734B007F5800 /* IDZSwiftCommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF70AD2386730B007F5800 /* IDZSwiftCommonCrypto.framework */; };
+		FFAF70B02386734B007F5800 /* IDZSwiftCommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF70AD2386730B007F5800 /* IDZSwiftCommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFAF70B12386734D007F5800 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF70AB238672F7007F5800 /* Alamofire.framework */; };
+		FFAF70B22386734D007F5800 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF70AB238672F7007F5800 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +58,10 @@
 			dstSubfolderSpec = 10;
 			files = (
 				2706EBED2371388600E0C9D8 /* Starscream.framework in Embed Frameworks */,
-				FFAF70A123866681007F5800 /* REIOSSDK.framework in Embed Frameworks */,
+				FFAF70B22386734D007F5800 /* Alamofire.framework in Embed Frameworks */,
+				FFAF70B02386734B007F5800 /* IDZSwiftCommonCrypto.framework in Embed Frameworks */,
 				2706EBEB2371388400E0C9D8 /* SocketIO.framework in Embed Frameworks */,
+				FFAF70AA2386723B007F5800 /* REIOSSDK.framework in Embed Frameworks */,
 				2706EBE52371387E00E0C9D8 /* CryptoSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -101,7 +107,9 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F3ED96EE1FB9BDA265BE23E6 /* Pods-AwesomeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProjectTests/Pods-AwesomeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
-		FFAF709E23866639007F5800 /* REIOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = REIOSSDK.framework; sourceTree = "<group>"; };
+		FFAF70A723867237007F5800 /* REIOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = REIOSSDK.framework; sourceTree = "<group>"; };
+		FFAF70AB238672F7007F5800 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		FFAF70AD2386730B007F5800 /* IDZSwiftCommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IDZSwiftCommonCrypto.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,12 +125,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAF70AF2386734B007F5800 /* IDZSwiftCommonCrypto.framework in Frameworks */,
 				2706EBE42371387E00E0C9D8 /* CryptoSwift.framework in Frameworks */,
-				FFAF70A023866681007F5800 /* REIOSSDK.framework in Frameworks */,
 				2706EBEC2371388600E0C9D8 /* Starscream.framework in Frameworks */,
+				FFAF70A92386723B007F5800 /* REIOSSDK.framework in Frameworks */,
 				274CF801237BE844004912B8 /* libTESTStatic.a in Frameworks */,
 				2706EBEA2371388400E0C9D8 /* SocketIO.framework in Frameworks */,
 				19BAB7F063D4EC433DF053EF /* libPods-AwesomeProject.a in Frameworks */,
+				FFAF70B12386734D007F5800 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +189,9 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FFAF709E23866639007F5800 /* REIOSSDK.framework */,
+				FFAF70AD2386730B007F5800 /* IDZSwiftCommonCrypto.framework */,
+				FFAF70AB238672F7007F5800 /* Alamofire.framework */,
+				FFAF70A723867237007F5800 /* REIOSSDK.framework */,
 				2706EBD92371384F00E0C9D8 /* CryptoSwift.framework */,
 				2706EBD62371384F00E0C9D8 /* SocketIO.framework */,
 				2706EBDB2371384F00E0C9D8 /* Starscream.framework */,
