@@ -8,7 +8,6 @@ import android.content.res.XmlResourceParser;
 
 
 import com.facebook.react.ReactApplication;
-import com.evollu.react.fcm.FIRMessagingPackage;
 import io.invertase.firebase.RNFirebasePackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -47,7 +46,7 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             AppConstants.LogFlag = true;
             return Arrays.<ReactPackage>asList(new MainReactPackage(),
-            new FIRMessagingPackage(),
+
                 new RNFirebaseMessagingPackage(),new RNFirebasePackage(),new RNFirebaseNotificationsPackage(),
                     new ReReactNativeSDKPackage(),new RNGestureHandlerPackage());
         }
