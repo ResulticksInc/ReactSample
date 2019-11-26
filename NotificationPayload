@@ -1,0 +1,46 @@
+//Android Payload 
+
+{
+  "to": "dFoXzg1OhHE:APA91bH9M4xuSkfzRMktjO4sSjjo1Uyh1e9j5dR7Yf6tF2Crw63xdWpXSkaLBSyveGyv7nDHxaPYB3YZfJ7csGjGTQLJfYwpU8-MkhaWKodIasqKPbXePSkWFAOqOAeCg-c73swefZCJ",
+  "data": {
+    "id": "06fe5da1-b05c-4b67-be37-85b81cf0f8242",
+    "title": "Usecase 2",
+    "category": "home",
+    "body": "Get your home loan with affordable EMI and longer repayment tenure. Click here to apply.",
+    "url": "",
+    "duration": "1 Minute(s)",
+    "actionName": "Maybe Later",
+    "navigationScreen": "com.awesomeproject.MainActivity",
+    "rating": "",
+    "MobileFriendlyUrl": "",
+    "pushType": 1,
+    "deliveryType": 0,
+    "customParams": "{\"screenName\":\"Home\",\"categoryId\":\"2\"}"
+  }
+}
+
+
+//Ios Payload
+
+
+{
+    "data": {
+        "attachment-url": "https://snx.resulticks.com/SocialMediaPostPicture/Temp/dd2eba83-647e-4c58-9f1b-31ab4c28ac58.png",
+        "duration": "1 (Hour(s))",
+        "id": "0006",
+        "mobileFriendlyUrl": "",
+        "screenUrl": "HYB_index",
+        "customParams":"{\"screenName\":\"Profile\",\"categoryId\":\"2149\"}"
+        
+    },
+    "notification": {
+        "title": "Home loans from Vision Bank",
+        "body": "Your dream home can be yours with Vision Bank’s new home loan offer. Find out how https://b.resu.io/XX2Rjg",
+        "sound": "default",
+        "badge": "5",
+        "click_action": "AlertMaybeLater"
+    },
+    "to": "fNJFpSy8mXw:APA91bHHc8ENMKZc2xo9jQ1VhsY7nWk-uB681H0-AeYCpF6VHxAdrsuhc1d-vAKWSUdhmOH96EKP4xupxpmPrnG6jJkf04kUpvmigDQH5y6FD9RSsUWAxE3Y9IxO4jtVaQ1JGuFMTLTf",
+    "mutable_content": true,
+    "content_available": false
+}
