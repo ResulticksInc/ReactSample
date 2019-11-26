@@ -32,7 +32,7 @@
 {
   
   REiosHandler.debug = YES;
-  REiosHandler.printAny = YES;
+  
   
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
