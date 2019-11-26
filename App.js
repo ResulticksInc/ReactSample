@@ -13,20 +13,18 @@ import BaseComponent from './BaseComponent';
 import firebase, { notifications } from 'react-native-firebase';
 
 export default class App extends BaseComponent {
-	componentWillMount() {}
 	componentDidMount() {
-		if (Platform.OS != 'ios') {
-			this.resAndroidHandler();
-		}
-
+		// FCM token Reciever
 		firebase.messaging().getToken().then((fcmToken) => {
 			if (fcmToken) {
 				console.log(`\n\n **** FCM Token **** \n ${fcmToken} \n **** End \n\n`);
 			}
 		});
-
+		/* Resulticks Push Handler */
 		if (Platform.OS == 'ios') {
 			this.resIosNotificationHandler();
+		} else {
+			this.resAndroidNotificationHandler();
 		}
 	}
 
@@ -35,26 +33,24 @@ export default class App extends BaseComponent {
 		this.removeNotificationListener();
 	}
 
+	/* Resulticks Ios Notification Handler */
 	resIosNotificationHandler() {
 		// Foreground notification - iOS
 		firebase.notifications().onNotification((obj) => {
 			if (obj) {
 				obj.actionIdentifier = obj.action;
-
 				var resPayload = this.payloadConversion(obj);
 				if (resPayload) {
 					NativeModules.ReReactNativeSDK.onNotificationPayloadReceiver(JSON.stringify(resPayload), 1);
 				}
 
-
+				// Local Notification optional one
 				const local_notification = new firebase.notifications.Notification()
-		.setBody(resPayload._body)
-		.setData(resPayload._data)
-		  .setNotificationId(resPayload._notificationId)
-		.setTitle(resPayload._title)
-		  
-		firebase.notifications().displayNotification(local_notification)
-	
+					.setBody(resPayload._body)
+					.setData(resPayload._data)
+					.setNotificationId(resPayload._notificationId)
+					.setTitle(resPayload._title);
+				firebase.notifications().displayNotification(local_notification);
 				// Do your functionality
 
 				/*******/
@@ -70,7 +66,7 @@ export default class App extends BaseComponent {
 				if (resPayload) {
 					NativeModules.ReReactNativeSDK.onNotificationPayloadReceiver(JSON.stringify(resPayload), 2);
 				}
-				console.log("Payload Receiver Opened" +resPayload);
+				console.log('Payload Receiver Opened' + resPayload);
 				// Do your functionality
 				let customParam = JSON.parse(resPayload._data.customParams);
 				this.props.navigation.navigate(customParam.screenName);
@@ -88,7 +84,7 @@ export default class App extends BaseComponent {
 					NativeModules.ReReactNativeSDK.onNotificationPayloadReceiver(JSON.stringify(resPayload), 3);
 				}
 			}
-			console.log("App first time Opened" +resPayload);
+			console.log('App first time Opened' + resPayload);
 			// Do your functionality
 			let customParam = JSON.parse(resPayload._data.customParams);
 			this.props.navigation.navigate(customParam.screenName);
@@ -96,6 +92,17 @@ export default class App extends BaseComponent {
 		});
 	}
 
+	/* Resulticks Android Notification Handler */
+	resAndroidNotificationHandler() {
+		if (Platform.OS != 'ios') {
+			DeviceEventEmitter.addListener('resulticksNotification', (payload) => {
+				let customParam = JSON.parse(payload.customParams);
+				this.props.navigation.navigate(customParam.screenName);
+			});
+		}
+	}
+
+	/* Notification payload conversion */
 	payloadConversion(notfication) {
 		var cache = [];
 		var payload = JSON.stringify(notfication, function(key, value) {
@@ -108,19 +115,10 @@ export default class App extends BaseComponent {
 			return value;
 		});
 		cache = null;
-
 		return JSON.parse(payload);
 	}
 
-	resAndroidHandler() {
-		if (Platform.OS != 'ios') {
-			DeviceEventEmitter.addListener('resulticksNotification', (payload) => {
-				let customParam = JSON.parse(payload.customParams);
-				this.props.navigation.navigate(customParam.screenName);
-			});
-		}
-	}
-
+	/* User Register */
 	register = () => {
 		var resUser = {
 			uniqueId: 'user-email or mobile number',
@@ -138,6 +136,7 @@ export default class App extends BaseComponent {
 		NativeModules.ReReactNativeSDK.userRegister(JSON.stringify(resUser));
 	};
 
+	/* Custom Event */
 	customEvent = () => {
 		// Sending custom event
 		// Custom event : event name and data both fully customizable for the user wish
@@ -184,7 +183,6 @@ export default class App extends BaseComponent {
 	};
 
 	render() {
-		//return <AppContainer />;
 		return (
 			<View style={styles.container}>
 				<Text style={styles.welcome}> Welcome to Resulticks App!! </Text>
@@ -197,17 +195,6 @@ export default class App extends BaseComponent {
 			</View>
 		);
 	}
-}
-
-function getActiveRouteName(navigationState) {
-	if (!navigationState) {
-		return null;
-	}
-	const route = navigationState.routes[navigationState.index];
-	if (route.routes) {
-		return getActiveRouteName(route);
-	}
-	return route.routeName;
 }
 
 const styles = StyleSheet.create({
