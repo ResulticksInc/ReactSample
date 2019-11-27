@@ -167,11 +167,16 @@ export default class App extends BaseComponent {
 	// Get notification list: Developer need to call this method to get notification list.
 	getNotification = () => {
 		NativeModules.ReReactNativeSDK.getNotification((error, notifications) => {
-			console.log(`getting notification type: ${typeof notifications}`);
-			console.log(`getting notification: ${JSON.stringify(notifications)}`);
-			let notificationList = JSON.stringify(notifications);
+			let notificationList = [];
+
+			if (Platform.OS != 'ios') {
+				notificationList = JSON.parse(notifications);
+			} else {
+				notificationList = notifications;
+			}
 			if (notificationList.length !== 0) {
 				// Do your functionality
+				alert(notificationList[0].title);
 			}
 		});
 	};
