@@ -176,7 +176,6 @@ export default class App extends BaseComponent {
 			}
 			if (notificationList.length !== 0) {
 				// Do your functionality
-				alert(notificationList[0].title);
 			}
 		});
 	};
