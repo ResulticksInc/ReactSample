@@ -38,6 +38,7 @@ const AppNavigator = createStackNavigator({
 	Profile: {
 		screen: Profile
 	},
+
 	Base: {
 		screen: BaseComponent
 	}

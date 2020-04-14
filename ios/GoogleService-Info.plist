@@ -3,34 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>745704678642-j4srg18vs7a77b6rijr3dl8rqvi6e6vg.apps.googleusercontent.com</string>
+	<string>200120933844-325frh8rhf5n23v17j8uhvkfd5v1smkn.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.745704678642-j4srg18vs7a77b6rijr3dl8rqvi6e6vg</string>
+	<string>com.googleusercontent.apps.200120933844-325frh8rhf5n23v17j8uhvkfd5v1smkn</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBE9iRxNiqduVdeoB1ER7Q9A-Vla71m36k</string>
+	<string>AIzaSyARNn1lD6nKuxX8tnHbH9p67XnGjkcD2Yk</string>
 	<key>GCM_SENDER_ID</key>
-	<string>745704678642</string>
+	<string>200120933844</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.interakt.visionretail</string>
+	<string>com.resulticks.visionbank</string>
 	<key>PROJECT_ID</key>
-	<string>vision-bank-ios</string>
+	<string>resulticksapplications</string>
 	<key>STORAGE_BUCKET</key>
-	<string>vision-bank-ios.appspot.com</string>
+	<string>resulticksapplications.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:745704678642:ios:fcb79b30c8ff0bc1</string>
+	<string>1:200120933844:ios:800fd03b2828c1edfcca41</string>
 	<key>DATABASE_URL</key>
-	<string>https://vision-bank-ios.firebaseio.com</string>
+	<string>https://resulticksapplications.firebaseio.com</string>
 </dict>
 </plist>

@@ -31,8 +31,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   
-  REiosHandler.debug = YES;
-  
   
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
@@ -53,7 +51,6 @@
   
   return YES;
 }
-
 
 
 - (void)registerNotificationForFcm:(UIApplication *)application {
@@ -102,7 +99,7 @@
   NSSet *categories = [NSSet setWithObject:inviteCategory];
   
   
-  [REiosHandler initWithApiWithApiKey:@"6087064d-c0fe-45ec-b5cd-380177251baf" registerNotificationCategory: categories];
+  [REiosHandler initWithApiWithApiKey:@"41e4c4ba-320a-4bb0-813d-b82bcfbdcecc" registerNotificationCategory: categories];
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge

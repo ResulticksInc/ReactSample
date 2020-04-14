@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "18f0a0973dff494246c435a642e8247e"
+build_time: [1586153615, 185763000]
+inputs:
+  "/Users/sivakumarr/Desktop/REIOSSDKApr3/MergingOldAndNew/ReactSample-master/ios/Test.swift": [1574831049, 0]

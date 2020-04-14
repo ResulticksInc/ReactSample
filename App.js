@@ -13,11 +13,32 @@ import BaseComponent from './BaseComponent';
 import firebase, { notifications } from 'react-native-firebase';
 
 export default class App extends BaseComponent {
+
+	state = {
+		isShowList: false,
+		notificationList: []
+	}
+
 	componentDidMount() {
 		// FCM token Reciever
 		firebase.messaging().getToken().then((fcmToken) => {
 			if (fcmToken) {
 				console.log(`\n\n **** FCM Token **** \n ${fcmToken} \n **** End \n\n`);
+				var resUser = {
+					uniqueId: 'BZ003728',
+					name: 'John',
+					email: 'john@gmail.com',
+					phone: '9123123123',
+					age: '30',
+					gender: 'Male',
+					profileUrl: 'https://john_profile_pic.png',
+					dob: "29Sep1990",
+					education: "PG",
+					employed: true,
+					married: true,
+					token: fcmToken
+				};
+				NativeModules.ReReactNativeSDK.userRegister(JSON.stringify(resUser));
 			}
 		});
 		/* Resulticks Push Handler */
@@ -69,8 +90,15 @@ export default class App extends BaseComponent {
 				console.log('Payload Receiver Opened' + resPayload);
 				// Do your functionality
 				let customParam = JSON.parse(resPayload._data.customParams);
-				this.props.navigation.navigate(customParam.screenName);
-				/*******/
+
+				// Note:
+				// AlertMaybeLater and Dismiss are Resulticks category
+				// if defaultActionIdentifier {
+				// 	// navigate your screen
+				// }
+				// if (actionIdentifier == "AlertMaybeLater" || actionIdentifier == "Dismiss") {
+				// 	// do not navigate screen 0r do not navigate your screen when app in background
+				// }
 			}
 		});
 
@@ -87,7 +115,7 @@ export default class App extends BaseComponent {
 			console.log('App first time Opened' + resPayload);
 			// Do your functionality
 			let customParam = JSON.parse(resPayload._data.customParams);
-			this.props.navigation.navigate(customParam.screenName);
+			// this.props.navigation.navigate(customParam.screenName);
 			/*******/
 		});
 	}
@@ -97,7 +125,7 @@ export default class App extends BaseComponent {
 		if (Platform.OS != 'ios') {
 			DeviceEventEmitter.addListener('resulticksNotification', (payload) => {
 				let customParam = JSON.parse(payload.customParams);
-				this.props.navigation.navigate(customParam.screenName);
+				// this.props.navigation.navigate(customParam.screenName);
 			});
 		}
 	}
@@ -121,14 +149,18 @@ export default class App extends BaseComponent {
 	/* User Register */
 	register = () => {
 		var resUser = {
-			uniqueId: 'user-email or mobile number',
-			name: 'user-name',
-			age: 'user-age',
-			email: 'user-email',
-			phone: 'mobile-number',
-			gender: 'user-gender',
-			token: 'device-token',
-			profileUrl: 'user-profile-url'
+			uniqueId: 'BZ003728',
+			name: 'John',
+			email: 'john@gmail.com',
+			phone: '9123123123',
+			age: '30',
+			gender: 'Male',
+			profileUrl: 'https://john_profile_pic.png',
+			dob: "29Sep1990",
+			education: "PG",
+			employed: true,
+			married: true,
+			token: 'device-token'
 		};
 
 		console.log('Register App.js' + resUser);
@@ -142,24 +174,22 @@ export default class App extends BaseComponent {
 		// Custom event : event name and data both fully customizable for the user wish
 		var customEventObject = {
 			eventName: 'Your custom event name',
-			data: {
-				productId: 'Your product id',
-				productName: 'Your product name'
-			}
+			data: {}
 		};
 		NativeModules.ReReactNativeSDK.customEvent(JSON.stringify(customEventObject));
 	};
 
 	// Screen tracking: Developer must pass screen name according to the presented screen
 	userNavigation = () => {
+		this.props.navigation.navigate("Profile");
 		NativeModules.ReReactNativeSDK.screenNavigation('HomeScreen');
 	};
 
 	// Location update: Developer must pass(Live or required location) the location object with latitude and longitude key as a String format
 	userlocationUpdate = () => {
 		var location = {
-			latitude: 13.067439,
-			longitude: 80.237617
+			lat: 13.27070000000001,
+			long: 80.27070000000001
 		};
 		NativeModules.ReReactNativeSDK.locationUpdate(JSON.stringify(location));
 	};
@@ -176,14 +206,50 @@ export default class App extends BaseComponent {
 			}
 			if (notificationList.length !== 0) {
 				// Do your functionality
+				let jsonString = JSON.stringify(notificationList)
+				alert(`*** the count is ${notificationList.length} \n\n ${JSON.stringify(JSON.parse(jsonString),null,2)}`)
+			} else {
+				alert("There are no notifications")
 			}
 		});
 	};
 
 	// Delete notification: Developer must pass selected notification object to delete
 	deleteNotification = (position) => {
-		let noteObj = { campaignId: '0001' };
-		NativeModules.ReReactNativeSDK.deleteNotification(JSON.stringify(noteObj));
+
+		NativeModules.ReReactNativeSDK.getNotification((error, notifications) => {
+
+			let notificationList = [];
+
+			if (Platform.OS != 'ios') {
+				notificationList = JSON.parse(notifications);
+			} else {
+				notificationList = notifications;
+			}
+			if (notificationList.length > 0) {
+				NativeModules.ReReactNativeSDK.deleteNotification(JSON.stringify(notificationList[0]));
+			} else {
+				alert("There are no notifications")
+			}
+		});
+	};
+
+	goToNotificationInbox = () => {
+
+		NativeModules.ReReactNativeSDK.getNotification((error, notifications) => {
+
+			alert("Green day")
+
+			this.setState({ isShowList: true })
+
+			let notificationList = [];
+
+			if (Platform.OS != 'ios') {
+				if (notifications.length > 0) {
+					this.setState({ notificationList: notifications })
+				}
+			}
+		});
 	};
 
 	render() {
@@ -196,6 +262,19 @@ export default class App extends BaseComponent {
 				<Button onPress={this.userlocationUpdate} title="Locaction Update" color="#FF6347" />
 				<Button onPress={this.getNotification} title="getNotification" color="#FF6347" />
 				<Button onPress={this.deleteNotification} title="deleteNotification" color="#FF6347" />
+				<Button onPress={this.goToNotificationInbox} title="Go to notification inbox" color="#FF6347" />
+				{
+					this.state.notificationList.length > 0 && this.state.isShowList ?
+
+					<View style={container.list}>
+					<Button onPress = {() => this.setState({ isShowList: false})} />
+					{
+						this.state.notificationList.map((item, index) => {
+							return <Text>{index}</Text>
+							})
+					}
+					</View> : null
+				}
 			</View>
 		);
 	}
@@ -207,5 +286,13 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 		alignItems: 'center',
 		backgroundColor: '#F5FCFF'
+	},
+	list: {
+		backgroundColor: "red",
+		margin: 0,
+		height: 400,
+		width: 200,
+		flex: 1,
+		display: "flex"
 	}
 });

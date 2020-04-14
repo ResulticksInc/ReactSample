@@ -184,9 +184,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreData;
+@import CoreGraphics;
+@import CoreLocation;
+@import Foundation;
 @import ObjectiveC;
 @import UIKit;
 @import UserNotifications;
+@import WebKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -204,6 +208,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
@@ -216,6 +222,224 @@ SWIFT_CLASS_NAMED("CampaignTracking")
 
 @interface CampaignTracking (SWIFT_EXTENSION(REIOSSDK))
 @property (nonatomic, strong) NSObject * _Nullable dict;
+@property (nonatomic, copy) NSDate * _Nullable date;
+@end
+
+@class NSCoder;
+
+SWIFT_CLASS("_TtC8REIOSSDK18CarouselScrollView")
+@interface CarouselScrollView : UIScrollView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+@end
+
+
+
+
+
+
+@interface CarouselScrollView (SWIFT_EXTENSION(REIOSSDK))
+- (void)autoScrollToNext;
+- (void)autoScrollToPre;
+@end
+
+
+@interface CarouselScrollView (SWIFT_EXTENSION(REIOSSDK)) <UIScrollViewDelegate>
+- (void)scrollViewWillEndDragging:(UIScrollView * _Nonnull)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(CGPoint * _Nonnull)targetContentOffset;
+- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewWillBeginDecelerating:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
+@end
+
+
+
+
+
+
+
+
+SWIFT_CLASS("_TtC8REIOSSDK12CarouselView")
+@interface CarouselView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+@end
+
+
+
+@class NSBundle;
+
+SWIFT_CLASS("_TtC8REIOSSDK22CarouselViewController")
+@interface CarouselViewController : UIViewController
+- (void)loadView;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface CarouselViewController (SWIFT_EXTENSION(REIOSSDK))
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
+@end
+
+
+SWIFT_PROTOCOL("_TtP8REIOSSDK30CarouselViewControllerDelegate_")
+@protocol CarouselViewControllerDelegate
+@optional
+/// page will add to carousel
+/// \param carousel instance of CarouselViewController
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselViewController * _Nonnull)carousel willInstallCell:(NSInteger)cell;
+/// page will remove from carousel
+/// \param carousel instance of CarouselViewController
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselViewController * _Nonnull)carousel willUninstallCell:(NSInteger)cell;
+/// page did add to carousel
+/// \param carousel instance of CarouselViewController
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselViewController * _Nonnull)carousel didInstallCell:(NSInteger)cell;
+/// page did remove from carousel
+/// \param carousel instance of CarouselViewController
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselViewController * _Nonnull)carousel didUninstallCell:(NSInteger)cell;
+/// page scroll progress
+/// \param carousel instance of CarouselViewController
+///
+/// \param from from page(first visiable page)
+///
+/// \param to to page
+///
+/// \param progress progess for scroll: progress > 0, page grow direction, < 0 page decrease diretion
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselViewController * _Nonnull)carousel scrollFrom:(NSInteger)from to:(NSInteger)to progress:(CGFloat)progress;
+/// page did scroll from page to page
+/// \param carousel instance of CarouselViewController
+///
+/// \param from from page(first visiable page)
+///
+/// \param to to cell
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselViewController * _Nonnull)carousel didScrollFrom:(NSInteger)from to:(NSInteger)to;
+- (void)carouselDidScroll:(CarouselViewController * _Nonnull)carousel;
+- (void)carouselWillBeginDragging:(CarouselViewController * _Nonnull)carousel;
+- (void)carouselDidEndDragging:(CarouselViewController * _Nonnull)carousel willDecelerate:(BOOL)decelerate;
+- (void)carouselWillBeginDecelerating:(CarouselViewController * _Nonnull)carousel;
+- (void)carouselDidEndDecelerating:(CarouselViewController * _Nonnull)carousel;
+- (void)carouselDidEndScrollingAnimation:(CarouselViewController * _Nonnull)carousel;
+/// did tap cell
+/// \param carousel instance of CarouselViewController
+///
+/// \param cell cell index
+///
+- (void)carousel:(CarouselViewController * _Nonnull)carousel didTapAt:(NSInteger)cell;
+@end
+
+
+SWIFT_PROTOCOL("_TtP8REIOSSDK20CarouselViewDelegate_")
+@protocol CarouselViewDelegate
+@optional
+/// cell will add to carousel
+/// \param carousel instance of CarouselView
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselView * _Nonnull)carousel willInstallCell:(NSInteger)cell;
+/// cell will remove from carousel
+/// \param carousel instance of CarouselView
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselView * _Nonnull)carousel willUninstallCell:(NSInteger)cell;
+/// cell did add to carousel
+/// \param carousel instance of CarouselView
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselView * _Nonnull)carousel didInstallCell:(NSInteger)cell;
+/// cell did remove from carousel
+/// \param carousel instance of CarouselView
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselView * _Nonnull)carousel didUninstallCell:(NSInteger)cell;
+/// cell scroll progress
+/// \param carousel instance of CarouselView
+///
+/// \param from from cell(first visiable cell)
+///
+/// \param to to cell
+///
+/// \param progress progess for scroll: progress > 0, cell grow direction, < 0 cell decrease diretion
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselView * _Nonnull)carousel scrollFrom:(NSInteger)from to:(NSInteger)to progress:(CGFloat)progress;
+/// cell did scroll from cell to cell
+/// \param carousel instance of CarouselView
+///
+/// \param from from cell(first visiable cell)
+///
+/// \param to to cell
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselView * _Nonnull)carousel didScrollFrom:(NSInteger)from to:(NSInteger)to;
+- (void)carouselDidScroll:(CarouselView * _Nonnull)carousel;
+- (void)carouselWillBeginDragging:(CarouselView * _Nonnull)carousel;
+- (void)carouselDidEndDragging:(CarouselView * _Nonnull)carousel willDecelerate:(BOOL)decelerate;
+- (void)carouselWillBeginDecelerating:(CarouselView * _Nonnull)carousel;
+- (void)carouselDidEndDecelerating:(CarouselView * _Nonnull)carousel;
+- (void)carouselDidEndScrollingAnimation:(CarouselView * _Nonnull)carousel;
+/// did tap cell
+/// \param carousel instance of CarouselView
+///
+/// \param cell cell index
+///
+- (void)carousel:(CarouselView * _Nonnull)carousel didTapAt:(NSInteger)cell;
 @end
 
 
@@ -235,6 +459,7 @@ SWIFT_CLASS_NAMED("EventTracking")
 
 @interface EventTracking (SWIFT_EXTENSION(REIOSSDK))
 @property (nonatomic, strong) NSObject * _Nullable dict;
+@property (nonatomic, copy) NSDate * _Nullable date;
 @end
 
 
@@ -254,6 +479,7 @@ SWIFT_CLASS_NAMED("FieldTracking")
 @property (nonatomic, copy) NSString * _Nullable minDuration;
 @property (nonatomic, copy) NSString * _Nullable minLength;
 @property (nonatomic, strong) NSObject * _Nullable dict;
+@property (nonatomic, copy) NSDate * _Nullable date;
 @end
 
 
@@ -263,17 +489,35 @@ SWIFT_CLASS("_TtC8REIOSSDK19NotificationHandler")
 @end
 
 
+@interface NotificationHandler (SWIFT_EXTENSION(REIOSSDK))
++ (void)resulticksAPNSLocalNotificationWithTitle:(NSString * _Nonnull)title body:(NSString * _Nonnull)body;
+@end
 
 
 
-@class UNNotification;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @class UNNotificationResponse;
 
 @interface NotificationHandler (SWIFT_EXTENSION(REIOSSDK))
-- (void)setForegroundNotificationWithNotification:(UNNotification * _Nonnull)notification completionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
-- (void)setForegroundNotificationWithData:(NSDictionary<NSString *, id> * _Nonnull)data completionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
-- (void)setNotificationActionWithResponse:(id _Nonnull)response;
-- (void)setNotificationAction1WithResponse:(UNNotificationResponse * _Nonnull)response;
++ (void)processNotificationActionWithResponse:(UNNotificationResponse * _Nullable)response userInfo:(NSDictionary * _Nullable)userInfo;
+@end
+
+
+@interface NotificationHandler (SWIFT_EXTENSION(REIOSSDK))
++ (void)deleteNotificationByDict:(NSString * _Nullable)dictStr;
 @end
 
 
@@ -285,62 +529,166 @@ SWIFT_CLASS_NAMED("NotificationList")
 
 @interface NotificationList (SWIFT_EXTENSION(REIOSSDK))
 @property (nonatomic, strong) NSObject * _Nullable dict;
+@property (nonatomic, copy) NSDate * _Nullable date;
 @end
 
 
+SWIFT_PROTOCOL("_TtP8REIOSSDK21REiosDeeplinkReceiver_")
+@protocol REiosDeeplinkReceiver
+- (void)didReceiveDeeplinkWithData:(NSDictionary<NSString *, id> * _Nonnull)data;
+@end
+
+@protocol REiosNotificationReceiver;
+
 SWIFT_CLASS("_TtC8REIOSSDK12REiosHandler")
 @interface REiosHandler : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL printAny;)
-+ (BOOL)printAny SWIFT_WARN_UNUSED_RESULT;
-+ (void)setPrintAny:(BOOL)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL debug;)
 + (BOOL)debug SWIFT_WARN_UNUSED_RESULT;
 + (void)setDebug:(BOOL)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <REiosNotificationReceiver> _Nullable notificationDelegate;)
++ (id <REiosNotificationReceiver> _Nullable)notificationDelegate SWIFT_WARN_UNUSED_RESULT;
++ (void)setNotificationDelegate:(id <REiosNotificationReceiver> _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <REiosDeeplinkReceiver> _Nullable deeplinkDelegate;)
++ (id <REiosDeeplinkReceiver> _Nullable)deeplinkDelegate SWIFT_WARN_UNUSED_RESULT;
++ (void)setDeeplinkDelegate:(id <REiosDeeplinkReceiver> _Nullable)value;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 @interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
-+ (void)setScreenNameWithScreenName:(NSString * _Nonnull)screenName;
++ (void)sdkRegistrationWithParams:(NSDictionary<NSString *, id> * _Nonnull)params success:(void (^ _Nonnull)(NSInteger))success failure:(void (^ _Nonnull)(NSString * _Nonnull))failure;
 @end
 
 @class UNNotificationCategory;
 
 @interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
++ (void)initSdkWithAppId:(NSString * _Nonnull)id notificationCategory:(NSSet<UNNotificationCategory *> * _Nonnull)category success:(void (^ _Nonnull)(NSInteger))success failure:(void (^ _Nonnull)(NSString * _Nonnull))failure SWIFT_METHOD_FAMILY(none);
+@end
+
+@class NSUserActivity;
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
++ (void)handleDynamicLinkWithUserActivity:(NSUserActivity * _Nullable)userActivity openLink:(NSURL * _Nullable)url;
+@end
+
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
 + (void)initWithApiWithApiKey:(NSString * _Nonnull)apiKey registerNotificationCategory:(NSSet<UNNotificationCategory *> * _Nullable)category SWIFT_METHOD_FAMILY(none);
 @end
 
-@class UIApplication;
 
 @interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
-+ (void)getApplicationWithApplication:(UIApplication * _Nonnull)application;
-@end
-
-
-@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
-+ (void)addEventWithEventName:(NSString * _Nonnull)eventName data:(NSString * _Nullable)data;
-+ (void)updateLocationWithLat:(NSString * _Nonnull)lat long:(NSString * _Nonnull)long_;
-@end
-
-
-@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
-+ (void)sdkRegistrationWithName:(NSString * _Nullable)name phone:(NSString * _Nullable)phone email:(NSString * _Nullable)email deviceToken:(NSString * _Nullable)deviceToken;
-+ (void)sdkRegistrationWithName:(NSString * _Nullable)name phone:(NSString * _Nullable)phone email:(NSString * _Nullable)email deviceToken:(NSString * _Nullable)deviceToken age:(NSString * _Nullable)age gender:(NSString * _Nullable)gender;
++ (void)registerUserData:(NSString * _Nullable)params;
 + (void)sdkRegistrationWithDictWithParams:(NSDictionary<NSString *, id> * _Nonnull)params;
 @end
 
 
 @interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
-+ (NSArray * _Nonnull)getNotificationList SWIFT_WARN_UNUSED_RESULT;
-+ (void)deleteNotificationListWithDict:(NSDictionary<NSString *, id> * _Nonnull)dict;
-+ (NSDictionary<NSString *, id> * _Nullable)getDeeplinkData SWIFT_WARN_UNUSED_RESULT;
-+ (void)fetchNotificationListData;
++ (void)setScreenName:(NSString * _Nonnull)name;
++ (void)setScreenNameWithScreenName:(NSString * _Nonnull)screenName;
 @end
 
 
 @interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
-+ (NotificationHandler * _Nullable)getNotification SWIFT_WARN_UNUSED_RESULT;
-+ (Deeplinking * _Nullable)getDeeplink SWIFT_WARN_UNUSED_RESULT;
+/// 3.1  This method returns the list of notification sent by resulticks platform
++ (NSArray * _Nonnull)getNotificationList SWIFT_WARN_UNUSED_RESULT;
+/// 3.2 This methods provides the notification list sent by resutlticks platform
+/// \param successHandler Success handler provides list of notification iin the form of [Any]
+///
++ (void)getNotificationListWithSuccessHandler:(void (^ _Nonnull)(NSArray * _Nonnull))successHandler;
+@end
+
+
+
+@class UIApplication;
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
++ (NSDictionary<NSString *, id> * _Nullable)getDeeplinkData SWIFT_WARN_UNUSED_RESULT;
++ (void)handleDeeplinkWithApplication:(UIApplication * _Nonnull)application userActivity:(NSUserActivity * _Nonnull)userActivity;
++ (void)handleOpenlinkWithUrl:(NSURL * _Nonnull)url;
+@end
+
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
++ (void)addCustomEvent:(NSString * _Nullable)event;
++ (void)addEventWithEventName:(NSString * _Nonnull)eventName data:(NSString * _Nullable)data;
++ (void)addEvent:(NSString * _Nonnull)eventName data:(NSDictionary<NSString *, id> * _Nonnull)data;
+@end
+
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
++ (void)updateWithLocation:(NSString * _Nullable)location;
++ (void)updateLocationWithLat:(NSString * _Nonnull)lat long:(NSString * _Nonnull)long_;
+@end
+
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
++ (void)setForegroundNotification:(NSString * _Nullable)strNotification completionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
++ (void)setNotificationActionWithStrResponse:(NSString * _Nonnull)strResponse;
+@end
+
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
+/// <ol>
+///   <li>
+///     This method gets the unread count from REIOSSDK local database
+///   </li>
+/// </ol>
+/// \param success success provides the exact unread count of type Int
+///
+/// \param failure failure always returns the 0 count of type Int
+///
++ (void)unreadNotificationCountOnSuccess:(void (^ _Nonnull)(NSInteger))success onFailure:(void (^ _Nonnull)(NSInteger))failure;
+/// 5.1 This method gets the unread count from REIOSSDK local database
+/// \param success success provides the exact unread count of type Int
+///
++ (void)unreadNotificationCountOnSuccess:(void (^ _Nonnull)(NSInteger))success;
+/// <ol>
+///   <li>
+///     This method returns the total notification count from REIOSSDK of type Int
+///   </li>
+/// </ol>
++ (NSInteger)totalNotificationCount SWIFT_WARN_UNUSED_RESULT;
+/// <ol>
+///   <li>
+///     This method used to set the read status of inbox notification
+///   </li>
+/// </ol>
+/// \param notificationId notificationId is a unique id used to set read status
+///
+/// \param success success is a completion handler which provides a count of unread status
+///
++ (void)setReadWithNotificationId:(NSString * _Nonnull)notificationId onSuccess:(void (^ _Nonnull)(NSInteger))success;
+@end
+
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
+/// 4.1 Delete selected notification with notification dict
+/// \param dict dict is a selected item to delete of type [String: Any]
+///
++ (void)deleteNotificationListWithDict:(NSDictionary<NSString *, id> * _Nonnull)dict;
+/// 4.2 Delete selected notification with campaign id
+/// \param campaignId camapign id is a unique value of type String used to delete selected item from notification list.
+///
++ (void)deleteNotificationByCampaignIdWithCampaignId:(NSString * _Nonnull)campaignId;
+/// 4.3 Delete selected notification with notification id
+/// \param campaignId notification id is a unique value of type String used to delete selected item from notification list.
+///
++ (void)deleteNotificationByNotificationIdWithNotificationId:(NSString * _Nonnull)notificationId;
+/// 4.4 Delete selected notification with notification id
+/// \param notificationId notification id is a unique value of type String used to delete selected item from notification list.
+///
+/// \param notificationList notificationList is a completion handler which send notification list data after delete notification
+///
++ (void)deleteNotificationByNotificationIdWithNotificationId:(NSString * _Nonnull)notificationId notificationList:(void (^ _Nonnull)(NSArray * _Nonnull))notificationList;
+@end
+
+@class UNNotification;
+
+SWIFT_PROTOCOL("_TtP8REIOSSDK25REiosNotificationReceiver_")
+@protocol REiosNotificationReceiver
+- (void)willPresentWithNotification:(UNNotification * _Nonnull)notification;
+- (void)didReceiveWithResponse:(UNNotificationResponse * _Nonnull)response;
 @end
 
 
@@ -352,7 +700,14 @@ SWIFT_CLASS_NAMED("ScreenTracking")
 
 @interface ScreenTracking (SWIFT_EXTENSION(REIOSSDK))
 @property (nonatomic, strong) NSObject * _Nullable dict;
+@property (nonatomic, copy) NSDate * _Nullable date;
 @end
+
+
+
+
+
+
 
 
 
@@ -365,6 +720,12 @@ SWIFT_CLASS_NAMED("ScreenTracking")
 @interface UIViewController (SWIFT_EXTENSION(REIOSSDK))
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent * _Nullable)event;
 @end
+
+
+
+
+
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -556,9 +917,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreData;
+@import CoreGraphics;
+@import CoreLocation;
+@import Foundation;
 @import ObjectiveC;
 @import UIKit;
 @import UserNotifications;
+@import WebKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -576,6 +941,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
@@ -588,6 +955,224 @@ SWIFT_CLASS_NAMED("CampaignTracking")
 
 @interface CampaignTracking (SWIFT_EXTENSION(REIOSSDK))
 @property (nonatomic, strong) NSObject * _Nullable dict;
+@property (nonatomic, copy) NSDate * _Nullable date;
+@end
+
+@class NSCoder;
+
+SWIFT_CLASS("_TtC8REIOSSDK18CarouselScrollView")
+@interface CarouselScrollView : UIScrollView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+@end
+
+
+
+
+
+
+@interface CarouselScrollView (SWIFT_EXTENSION(REIOSSDK))
+- (void)autoScrollToNext;
+- (void)autoScrollToPre;
+@end
+
+
+@interface CarouselScrollView (SWIFT_EXTENSION(REIOSSDK)) <UIScrollViewDelegate>
+- (void)scrollViewWillEndDragging:(UIScrollView * _Nonnull)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(CGPoint * _Nonnull)targetContentOffset;
+- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewWillBeginDecelerating:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
+@end
+
+
+
+
+
+
+
+
+SWIFT_CLASS("_TtC8REIOSSDK12CarouselView")
+@interface CarouselView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+@end
+
+
+
+@class NSBundle;
+
+SWIFT_CLASS("_TtC8REIOSSDK22CarouselViewController")
+@interface CarouselViewController : UIViewController
+- (void)loadView;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface CarouselViewController (SWIFT_EXTENSION(REIOSSDK))
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
+@end
+
+
+SWIFT_PROTOCOL("_TtP8REIOSSDK30CarouselViewControllerDelegate_")
+@protocol CarouselViewControllerDelegate
+@optional
+/// page will add to carousel
+/// \param carousel instance of CarouselViewController
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselViewController * _Nonnull)carousel willInstallCell:(NSInteger)cell;
+/// page will remove from carousel
+/// \param carousel instance of CarouselViewController
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselViewController * _Nonnull)carousel willUninstallCell:(NSInteger)cell;
+/// page did add to carousel
+/// \param carousel instance of CarouselViewController
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselViewController * _Nonnull)carousel didInstallCell:(NSInteger)cell;
+/// page did remove from carousel
+/// \param carousel instance of CarouselViewController
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselViewController * _Nonnull)carousel didUninstallCell:(NSInteger)cell;
+/// page scroll progress
+/// \param carousel instance of CarouselViewController
+///
+/// \param from from page(first visiable page)
+///
+/// \param to to page
+///
+/// \param progress progess for scroll: progress > 0, page grow direction, < 0 page decrease diretion
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselViewController * _Nonnull)carousel scrollFrom:(NSInteger)from to:(NSInteger)to progress:(CGFloat)progress;
+/// page did scroll from page to page
+/// \param carousel instance of CarouselViewController
+///
+/// \param from from page(first visiable page)
+///
+/// \param to to cell
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselViewController * _Nonnull)carousel didScrollFrom:(NSInteger)from to:(NSInteger)to;
+- (void)carouselDidScroll:(CarouselViewController * _Nonnull)carousel;
+- (void)carouselWillBeginDragging:(CarouselViewController * _Nonnull)carousel;
+- (void)carouselDidEndDragging:(CarouselViewController * _Nonnull)carousel willDecelerate:(BOOL)decelerate;
+- (void)carouselWillBeginDecelerating:(CarouselViewController * _Nonnull)carousel;
+- (void)carouselDidEndDecelerating:(CarouselViewController * _Nonnull)carousel;
+- (void)carouselDidEndScrollingAnimation:(CarouselViewController * _Nonnull)carousel;
+/// did tap cell
+/// \param carousel instance of CarouselViewController
+///
+/// \param cell cell index
+///
+- (void)carousel:(CarouselViewController * _Nonnull)carousel didTapAt:(NSInteger)cell;
+@end
+
+
+SWIFT_PROTOCOL("_TtP8REIOSSDK20CarouselViewDelegate_")
+@protocol CarouselViewDelegate
+@optional
+/// cell will add to carousel
+/// \param carousel instance of CarouselView
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselView * _Nonnull)carousel willInstallCell:(NSInteger)cell;
+/// cell will remove from carousel
+/// \param carousel instance of CarouselView
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselView * _Nonnull)carousel willUninstallCell:(NSInteger)cell;
+/// cell did add to carousel
+/// \param carousel instance of CarouselView
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselView * _Nonnull)carousel didInstallCell:(NSInteger)cell;
+/// cell did remove from carousel
+/// \param carousel instance of CarouselView
+///
+/// \param cell cell index
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselView * _Nonnull)carousel didUninstallCell:(NSInteger)cell;
+/// cell scroll progress
+/// \param carousel instance of CarouselView
+///
+/// \param from from cell(first visiable cell)
+///
+/// \param to to cell
+///
+/// \param progress progess for scroll: progress > 0, cell grow direction, < 0 cell decrease diretion
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselView * _Nonnull)carousel scrollFrom:(NSInteger)from to:(NSInteger)to progress:(CGFloat)progress;
+/// cell did scroll from cell to cell
+/// \param carousel instance of CarouselView
+///
+/// \param from from cell(first visiable cell)
+///
+/// \param to to cell
+///
+///
+/// returns:
+/// Void
+- (void)carousel:(CarouselView * _Nonnull)carousel didScrollFrom:(NSInteger)from to:(NSInteger)to;
+- (void)carouselDidScroll:(CarouselView * _Nonnull)carousel;
+- (void)carouselWillBeginDragging:(CarouselView * _Nonnull)carousel;
+- (void)carouselDidEndDragging:(CarouselView * _Nonnull)carousel willDecelerate:(BOOL)decelerate;
+- (void)carouselWillBeginDecelerating:(CarouselView * _Nonnull)carousel;
+- (void)carouselDidEndDecelerating:(CarouselView * _Nonnull)carousel;
+- (void)carouselDidEndScrollingAnimation:(CarouselView * _Nonnull)carousel;
+/// did tap cell
+/// \param carousel instance of CarouselView
+///
+/// \param cell cell index
+///
+- (void)carousel:(CarouselView * _Nonnull)carousel didTapAt:(NSInteger)cell;
 @end
 
 
@@ -607,6 +1192,7 @@ SWIFT_CLASS_NAMED("EventTracking")
 
 @interface EventTracking (SWIFT_EXTENSION(REIOSSDK))
 @property (nonatomic, strong) NSObject * _Nullable dict;
+@property (nonatomic, copy) NSDate * _Nullable date;
 @end
 
 
@@ -626,6 +1212,7 @@ SWIFT_CLASS_NAMED("FieldTracking")
 @property (nonatomic, copy) NSString * _Nullable minDuration;
 @property (nonatomic, copy) NSString * _Nullable minLength;
 @property (nonatomic, strong) NSObject * _Nullable dict;
+@property (nonatomic, copy) NSDate * _Nullable date;
 @end
 
 
@@ -635,17 +1222,35 @@ SWIFT_CLASS("_TtC8REIOSSDK19NotificationHandler")
 @end
 
 
+@interface NotificationHandler (SWIFT_EXTENSION(REIOSSDK))
++ (void)resulticksAPNSLocalNotificationWithTitle:(NSString * _Nonnull)title body:(NSString * _Nonnull)body;
+@end
 
 
 
-@class UNNotification;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @class UNNotificationResponse;
 
 @interface NotificationHandler (SWIFT_EXTENSION(REIOSSDK))
-- (void)setForegroundNotificationWithNotification:(UNNotification * _Nonnull)notification completionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
-- (void)setForegroundNotificationWithData:(NSDictionary<NSString *, id> * _Nonnull)data completionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
-- (void)setNotificationActionWithResponse:(id _Nonnull)response;
-- (void)setNotificationAction1WithResponse:(UNNotificationResponse * _Nonnull)response;
++ (void)processNotificationActionWithResponse:(UNNotificationResponse * _Nullable)response userInfo:(NSDictionary * _Nullable)userInfo;
+@end
+
+
+@interface NotificationHandler (SWIFT_EXTENSION(REIOSSDK))
++ (void)deleteNotificationByDict:(NSString * _Nullable)dictStr;
 @end
 
 
@@ -657,62 +1262,166 @@ SWIFT_CLASS_NAMED("NotificationList")
 
 @interface NotificationList (SWIFT_EXTENSION(REIOSSDK))
 @property (nonatomic, strong) NSObject * _Nullable dict;
+@property (nonatomic, copy) NSDate * _Nullable date;
 @end
 
 
+SWIFT_PROTOCOL("_TtP8REIOSSDK21REiosDeeplinkReceiver_")
+@protocol REiosDeeplinkReceiver
+- (void)didReceiveDeeplinkWithData:(NSDictionary<NSString *, id> * _Nonnull)data;
+@end
+
+@protocol REiosNotificationReceiver;
+
 SWIFT_CLASS("_TtC8REIOSSDK12REiosHandler")
 @interface REiosHandler : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL printAny;)
-+ (BOOL)printAny SWIFT_WARN_UNUSED_RESULT;
-+ (void)setPrintAny:(BOOL)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL debug;)
 + (BOOL)debug SWIFT_WARN_UNUSED_RESULT;
 + (void)setDebug:(BOOL)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <REiosNotificationReceiver> _Nullable notificationDelegate;)
++ (id <REiosNotificationReceiver> _Nullable)notificationDelegate SWIFT_WARN_UNUSED_RESULT;
++ (void)setNotificationDelegate:(id <REiosNotificationReceiver> _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <REiosDeeplinkReceiver> _Nullable deeplinkDelegate;)
++ (id <REiosDeeplinkReceiver> _Nullable)deeplinkDelegate SWIFT_WARN_UNUSED_RESULT;
++ (void)setDeeplinkDelegate:(id <REiosDeeplinkReceiver> _Nullable)value;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 @interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
-+ (void)setScreenNameWithScreenName:(NSString * _Nonnull)screenName;
++ (void)sdkRegistrationWithParams:(NSDictionary<NSString *, id> * _Nonnull)params success:(void (^ _Nonnull)(NSInteger))success failure:(void (^ _Nonnull)(NSString * _Nonnull))failure;
 @end
 
 @class UNNotificationCategory;
 
 @interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
++ (void)initSdkWithAppId:(NSString * _Nonnull)id notificationCategory:(NSSet<UNNotificationCategory *> * _Nonnull)category success:(void (^ _Nonnull)(NSInteger))success failure:(void (^ _Nonnull)(NSString * _Nonnull))failure SWIFT_METHOD_FAMILY(none);
+@end
+
+@class NSUserActivity;
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
++ (void)handleDynamicLinkWithUserActivity:(NSUserActivity * _Nullable)userActivity openLink:(NSURL * _Nullable)url;
+@end
+
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
 + (void)initWithApiWithApiKey:(NSString * _Nonnull)apiKey registerNotificationCategory:(NSSet<UNNotificationCategory *> * _Nullable)category SWIFT_METHOD_FAMILY(none);
 @end
 
-@class UIApplication;
 
 @interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
-+ (void)getApplicationWithApplication:(UIApplication * _Nonnull)application;
-@end
-
-
-@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
-+ (void)addEventWithEventName:(NSString * _Nonnull)eventName data:(NSString * _Nullable)data;
-+ (void)updateLocationWithLat:(NSString * _Nonnull)lat long:(NSString * _Nonnull)long_;
-@end
-
-
-@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
-+ (void)sdkRegistrationWithName:(NSString * _Nullable)name phone:(NSString * _Nullable)phone email:(NSString * _Nullable)email deviceToken:(NSString * _Nullable)deviceToken;
-+ (void)sdkRegistrationWithName:(NSString * _Nullable)name phone:(NSString * _Nullable)phone email:(NSString * _Nullable)email deviceToken:(NSString * _Nullable)deviceToken age:(NSString * _Nullable)age gender:(NSString * _Nullable)gender;
++ (void)registerUserData:(NSString * _Nullable)params;
 + (void)sdkRegistrationWithDictWithParams:(NSDictionary<NSString *, id> * _Nonnull)params;
 @end
 
 
 @interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
-+ (NSArray * _Nonnull)getNotificationList SWIFT_WARN_UNUSED_RESULT;
-+ (void)deleteNotificationListWithDict:(NSDictionary<NSString *, id> * _Nonnull)dict;
-+ (NSDictionary<NSString *, id> * _Nullable)getDeeplinkData SWIFT_WARN_UNUSED_RESULT;
-+ (void)fetchNotificationListData;
++ (void)setScreenName:(NSString * _Nonnull)name;
++ (void)setScreenNameWithScreenName:(NSString * _Nonnull)screenName;
 @end
 
 
 @interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
-+ (NotificationHandler * _Nullable)getNotification SWIFT_WARN_UNUSED_RESULT;
-+ (Deeplinking * _Nullable)getDeeplink SWIFT_WARN_UNUSED_RESULT;
+/// 3.1  This method returns the list of notification sent by resulticks platform
++ (NSArray * _Nonnull)getNotificationList SWIFT_WARN_UNUSED_RESULT;
+/// 3.2 This methods provides the notification list sent by resutlticks platform
+/// \param successHandler Success handler provides list of notification iin the form of [Any]
+///
++ (void)getNotificationListWithSuccessHandler:(void (^ _Nonnull)(NSArray * _Nonnull))successHandler;
+@end
+
+
+
+@class UIApplication;
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
++ (NSDictionary<NSString *, id> * _Nullable)getDeeplinkData SWIFT_WARN_UNUSED_RESULT;
++ (void)handleDeeplinkWithApplication:(UIApplication * _Nonnull)application userActivity:(NSUserActivity * _Nonnull)userActivity;
++ (void)handleOpenlinkWithUrl:(NSURL * _Nonnull)url;
+@end
+
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
++ (void)addCustomEvent:(NSString * _Nullable)event;
++ (void)addEventWithEventName:(NSString * _Nonnull)eventName data:(NSString * _Nullable)data;
++ (void)addEvent:(NSString * _Nonnull)eventName data:(NSDictionary<NSString *, id> * _Nonnull)data;
+@end
+
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
++ (void)updateWithLocation:(NSString * _Nullable)location;
++ (void)updateLocationWithLat:(NSString * _Nonnull)lat long:(NSString * _Nonnull)long_;
+@end
+
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
++ (void)setForegroundNotification:(NSString * _Nullable)strNotification completionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
++ (void)setNotificationActionWithStrResponse:(NSString * _Nonnull)strResponse;
+@end
+
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
+/// <ol>
+///   <li>
+///     This method gets the unread count from REIOSSDK local database
+///   </li>
+/// </ol>
+/// \param success success provides the exact unread count of type Int
+///
+/// \param failure failure always returns the 0 count of type Int
+///
++ (void)unreadNotificationCountOnSuccess:(void (^ _Nonnull)(NSInteger))success onFailure:(void (^ _Nonnull)(NSInteger))failure;
+/// 5.1 This method gets the unread count from REIOSSDK local database
+/// \param success success provides the exact unread count of type Int
+///
++ (void)unreadNotificationCountOnSuccess:(void (^ _Nonnull)(NSInteger))success;
+/// <ol>
+///   <li>
+///     This method returns the total notification count from REIOSSDK of type Int
+///   </li>
+/// </ol>
++ (NSInteger)totalNotificationCount SWIFT_WARN_UNUSED_RESULT;
+/// <ol>
+///   <li>
+///     This method used to set the read status of inbox notification
+///   </li>
+/// </ol>
+/// \param notificationId notificationId is a unique id used to set read status
+///
+/// \param success success is a completion handler which provides a count of unread status
+///
++ (void)setReadWithNotificationId:(NSString * _Nonnull)notificationId onSuccess:(void (^ _Nonnull)(NSInteger))success;
+@end
+
+
+@interface REiosHandler (SWIFT_EXTENSION(REIOSSDK))
+/// 4.1 Delete selected notification with notification dict
+/// \param dict dict is a selected item to delete of type [String: Any]
+///
++ (void)deleteNotificationListWithDict:(NSDictionary<NSString *, id> * _Nonnull)dict;
+/// 4.2 Delete selected notification with campaign id
+/// \param campaignId camapign id is a unique value of type String used to delete selected item from notification list.
+///
++ (void)deleteNotificationByCampaignIdWithCampaignId:(NSString * _Nonnull)campaignId;
+/// 4.3 Delete selected notification with notification id
+/// \param campaignId notification id is a unique value of type String used to delete selected item from notification list.
+///
++ (void)deleteNotificationByNotificationIdWithNotificationId:(NSString * _Nonnull)notificationId;
+/// 4.4 Delete selected notification with notification id
+/// \param notificationId notification id is a unique value of type String used to delete selected item from notification list.
+///
+/// \param notificationList notificationList is a completion handler which send notification list data after delete notification
+///
++ (void)deleteNotificationByNotificationIdWithNotificationId:(NSString * _Nonnull)notificationId notificationList:(void (^ _Nonnull)(NSArray * _Nonnull))notificationList;
+@end
+
+@class UNNotification;
+
+SWIFT_PROTOCOL("_TtP8REIOSSDK25REiosNotificationReceiver_")
+@protocol REiosNotificationReceiver
+- (void)willPresentWithNotification:(UNNotification * _Nonnull)notification;
+- (void)didReceiveWithResponse:(UNNotificationResponse * _Nonnull)response;
 @end
 
 
@@ -724,7 +1433,14 @@ SWIFT_CLASS_NAMED("ScreenTracking")
 
 @interface ScreenTracking (SWIFT_EXTENSION(REIOSSDK))
 @property (nonatomic, strong) NSObject * _Nullable dict;
+@property (nonatomic, copy) NSDate * _Nullable date;
 @end
+
+
+
+
+
+
 
 
 
@@ -737,6 +1453,12 @@ SWIFT_CLASS_NAMED("ScreenTracking")
 @interface UIViewController (SWIFT_EXTENSION(REIOSSDK))
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent * _Nullable)event;
 @end
+
+
+
+
+
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
